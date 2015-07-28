@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D2145F8-5A86-BC10-1808-8A3D934BA62F" name="Enrolled_in">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:22:32 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Section_reference_number" id="115EDD4D-7BE0-3D5B-C8F7-549DA1B8B0AB">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:22:32 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,0,5</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCB48A68-AFFD-93C5-3990-849498A53901" referredColumn="DDF42FF2-3482-FD03-D5F2-46FF16BBCC55"/>
+</associations>
+</Column>
+<Column name="Student_id" id="ACA98CA5-2344-72AE-C5FB-7866B2508D4E">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:22:32 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>9</dataTypeScale>
+<ownDataTypeParameters>,0,9</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9C7BA2D-2AEA-4273-8D7F-EF6298172A3D" referredColumn="1AE73957-9501-572E-91C1-3D70DE73641B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93EE4F8C-29A4-67DF-30A4-F9DB540D86EB" name="Enrolled_in_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:22:32 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="115EDD4D-7BE0-3D5B-C8F7-549DA1B8B0AB"/>
+<colUsage columnID="ACA98CA5-2344-72AE-C5FB-7866B2508D4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="774DBE5B-90C4-71AF-11BD-28B0E993CE51" name="FK_ASS_24">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:22:32 UTC</createdTime>
+<generatorID>A0C44A93-2212-9DBC-0888-425F1EE39E18</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="115EDD4D-7BE0-3D5B-C8F7-549DA1B8B0AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D92D52EE-4189-5B46-EDCD-7257A4435055" name="FK_ASS_25">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:22:32 UTC</createdTime>
+<generatorID>A0C44A93-2212-9DBC-0888-425F1EE39E18</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACA98CA5-2344-72AE-C5FB-7866B2508D4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="29CF14F7-1CDA-E304-24DB-0F630E619D7E" name="Department">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 05:01:29 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="61C93F6A-D8EE-2320-D8BC-2C0D08483664">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 05:01:41 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="C95C9F28-972F-EA00-51D0-70445DF98CF5">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 05:02:04 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="abbreviation" id="FFC5B34B-9F09-EED3-F227-1A934C77DAA4">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 05:02:21 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="2337EE2E-8EFF-A9E8-02E5-60C27F22B0E7">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 05:10:05 UTC</createdTime>
+<generatorID>27009152-B43C-7FE2-E460-7AE1B631ECD0</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<referedAttribute>51F5205D-C940-A1FF-25EE-BE702FFDB139</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C96568D3-0701-F7A9-9CEB-6A1FF8AAA60C" name="Department PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 05:02:44 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>61C93F6A-D8EE-2320-D8BC-2C0D08483664</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

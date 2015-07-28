@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FB714F29-9417-21A5-B03E-A4C27F925AC6" name="Grading Component">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:15:00 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="4C9B9A04-B8C0-8E38-0908-7FE317DF8B5A">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:42:11 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,0,3</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="C34A914F-EDBE-B240-8000-AAC288C83477">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:15:13 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="maximum_points" id="CBA495BD-56F5-B85B-9DA9-675AE2D99083">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:15:34 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="weight" id="6E1097FC-91D6-78F2-AF3D-E74B62DAACA1">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:16:09 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Course number" id="CC10825E-632C-B9C1-5D0C-B299036B6B9C">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:17:47 UTC</createdTime>
+<generatorID>4F971256-95F8-E3B4-BDCE-0E2ED3B1F75F</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<referedAttribute>92CAE56F-C127-BC81-1695-C4BA9385ADA8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,0,4</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Instructor id" id="5AF02FCB-B99A-9D7E-A950-96DE13540EB0">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:46:33 UTC</createdTime>
+<generatorID>65B7AF39-C2AC-21AA-680E-4AA8FACB063D</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<referedAttribute>BCB2079E-6BBF-D766-4CD9-6CCF30DAF049</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>9</dataTypeScale>
+<ownDataTypeParameters>,0,9</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AE246D0E-87D3-F61E-510D-4371BA61109F" name="Grading_Component_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 01:54:14 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4C9B9A04-B8C0-8E38-0908-7FE317DF8B5A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

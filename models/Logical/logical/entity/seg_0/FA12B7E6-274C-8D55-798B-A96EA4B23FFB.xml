@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA12B7E6-274C-8D55-798B-A96EA4B23FFB" name="Major">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 00:53:39 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Name" id="A102E4B4-915D-FBC2-C405-F5FC0DB7BCC0">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 00:54:24 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code" id="F6F988F4-7DDF-407D-9341-731EEB81EF2B">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 00:55:46 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="A2544542-12DF-7F6C-79EA-D809622CB6A3">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 05:13:31 UTC</createdTime>
+<generatorID>AD154A3A-8C74-78E0-5971-E4792FB781D5</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<referedAttribute>61C93F6A-D8EE-2320-D8BC-2C0D08483664</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8D3E83DB-064D-544E-7A13-BA2325D6E250" name="Major PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-28 00:56:07 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F6F988F4-7DDF-407D-9341-731EEB81EF2B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
