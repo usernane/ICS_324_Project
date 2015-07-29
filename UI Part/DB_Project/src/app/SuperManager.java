@@ -50,6 +50,17 @@ public class SuperManager {
         }
         return new OperationResult(false,message);
     }
+    public LinkedList<String> getDepartmentsNames(){
+        try{
+            ResultSet rs = connection.executeQuery("select department.name from department");
+            LinkedList<String> names = new LinkedList<>();
+            while(rs.next()){
+                names.add(rs.getString(1));
+            }
+            return names;
+        }
+        catch(SQLException ex){return null;}
+    }
     public static LinkedList<String> getCollegesNames(){
         try{
             ResultSet rs = connection.executeQuery("select college.name from college");
@@ -59,7 +70,7 @@ public class SuperManager {
             }
             return names;
         }
-        catch(SQLException ex){System.out.println(ex.getMessage());return null;}
+        catch(SQLException ex){return null;}
     }
     public static LinkedList<String> getCollegeIDs(){
         try{
