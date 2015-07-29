@@ -8,6 +8,7 @@ package app;
 /**
  *
  * @author Ibrahim
+ * This class is helpful to check if query or an update to the database was successfully done or not.
  */
 public class OperationResult {
     private final String message;

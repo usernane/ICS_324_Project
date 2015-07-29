@@ -9,8 +9,7 @@ package app;
  *
  * @author Ibrahim
  */
-import app.newCollegeDialog.NewCollegeDialog;
-import com.newComTest.ConnectionManager;
+import app.Dialogs.NewCollegeDialog;
 import javax.swing.UIManager;
 public class Main {
 

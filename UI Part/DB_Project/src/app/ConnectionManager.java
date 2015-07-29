@@ -1,4 +1,4 @@
-package com.newComTest;
+package app;
 
 
 import java.sql.*;
