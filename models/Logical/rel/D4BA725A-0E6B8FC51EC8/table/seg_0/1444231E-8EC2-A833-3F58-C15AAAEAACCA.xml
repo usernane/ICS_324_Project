@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1444231E-8EC2-A833-3F58-C15AAAEAACCA" name="Grade_Cutoffs">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:10:25 UTC</createdTime>
+<generatorID>B87A339D-F513-01F4-B961-5DC0447383E4</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Letter_grade" id="258CE77C-0567-909D-A6F4-30D865D0F2EB">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:10:25 UTC</createdTime>
+<generatorID>4584A289-77BF-A8F3-7AD4-BE5B35387EE8</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="value" id="F811B6A4-29BC-4AD9-4D69-A6D97B643667">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:10:25 UTC</createdTime>
+<generatorID>D20D7EE9-F5E4-B53F-444B-671B962860F3</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Section_ref_num" id="FE880E92-8633-06E0-0B9F-FA8A06680203">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:10:25 UTC</createdTime>
+<generatorID>BA03D7F1-2B34-BED1-1B8B-418CECD84E0C</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B7E00EF-4306-FDED-8FF2-8A2143E46AE4" referredColumn="8EE56155-1912-24E2-09CB-C877D43D873A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C14F9CBA-23C6-9FC9-410D-F67B03E5DE3E" name="Grade_Cutoffs_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:10:25 UTC</createdTime>
+<generatorID>87B91FD9-FAAB-2384-14C7-C86DDC1638BF</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="286BC1EB-3F80-BBF4-B5AC-4316A0548819" name="Grade_Cutoffs_Section_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:10:25 UTC</createdTime>
+<generatorID>C6EAFBF7-7F7C-5BE2-16E9-A21FC232B86F</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE880E92-8633-06E0-0B9F-FA8A06680203"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

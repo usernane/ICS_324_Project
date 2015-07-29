@@ -47,7 +47,7 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="reference number" id="BA03D7F1-2B34-BED1-1B8B-418CECD84E0C">
+<Attribute name="ref_num" id="BA03D7F1-2B34-BED1-1B8B-418CECD84E0C">
 <createdBy>Ibrahim</createdBy>
 <createdTime>2015-07-29 11:36:20 UTC</createdTime>
 <generatorID>C6EAFBF7-7F7C-5BE2-16E9-A21FC232B86F</generatorID>

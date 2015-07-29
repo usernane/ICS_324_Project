@@ -47,18 +47,11 @@ public class NewMajorDialog extends JDialog{
         this.okCancelContainer = new JPanel();
         this.okButton.addActionListener(new EventClass(this));
         this.cancelButton.addActionListener(new EventClass(this));
-        this.departmentIDCompoBox = new JComboBox<>();
-        this.uniqueIDLabel = new JLabel("Department  Identifier:");
         this.departmentIDLabel = new JLabel("College:");
         this.departmentIDCombobox = new JComboBox<>();
         
-        char c = 'A';
-        for(int i = 'A'  ; i <= 'Z' ; i++){
-            this.departmentIDCompoBox.addItem(""+c);
-            c++;
-        }
         for(int i = 0 ; i < SuperManager.getCollegesNames().size() ; i++){
-            this.departmentIDCombobox.addItem(SuperManager.getCollegesNames().get(i));
+            this.departmentIDCombobox.addItem(SuperManager.getDepartmentsNames().get(i));
         }
     }
     
@@ -88,18 +81,13 @@ public class NewMajorDialog extends JDialog{
         
         c.gridx = 0;
         c.gridy = 2;
-        super.add(this.uniqueIDLabel,c);
-        c.gridx = 1;
-        c.gridy = 2;
-        super.add(this.departmentIDCompoBox,c);
-        c.gridx = 0;
-        c.gridy = 3;
         super.add(this.departmentIDLabel,c);
         c.gridx = 1;
-        c.gridy = 3;
+        c.gridy = 2;
         super.add(this.departmentIDCombobox,c);
+
         c.gridx = 0;
-        c.gridy = 4;
+        c.gridy = 3;
         c.gridwidth = 2;
         
         this.okCancelContainer.setLayout(new FlowLayout());
@@ -116,9 +104,7 @@ public class NewMajorDialog extends JDialog{
     public String getAabbreviation(){
         return this.abbreviationField.getText().toUpperCase();
     }
-    public String getUniqueID(){
-        return (String)this.departmentIDCompoBox.getSelectedItem();
-    }
+   
     private class EventClass implements ActionListener{
         
         private Component parent;
@@ -131,13 +117,13 @@ public class NewMajorDialog extends JDialog{
                 if(getDepartmentName().length() != 0){
                     if(getAabbreviation().length() != 0){
                         int collegeIndex = departmentIDCombobox.getSelectedIndex();
-                        OperationResult result = SuperManager.addDepartment(getUniqueID(), getDepartmentName(), getAabbreviation(),SuperManager.getCollegeIDs().get(collegeIndex));
+                        /*OperationResult result = SuperManager.addDepartment(getDepartmentName(), getAabbreviation(),SuperManager.getCollegeIDs().get(collegeIndex));
                         if(result.getResult()){
                             JOptionPane.showMessageDialog(this.parent, result.getMessage(),"Added!" ,JOptionPane.INFORMATION_MESSAGE);
                         }
                         else{
                             JOptionPane.showMessageDialog(this.parent, result.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-                        }
+                        }*/
                     }
                     else{
                         JOptionPane.showMessageDialog(this.parent, "Error: Aabbreviation field can not be empty!", "Error", JOptionPane.ERROR_MESSAGE);

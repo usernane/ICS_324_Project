@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66213348-E116-D930-C7A4-5F7258B3A1AB" name="Course">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>F4AB08AD-06CB-4583-7A88-56C5179C0560</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FD4C974B-F34A-97DA-D157-5EE6A5AD1741">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>92CAE56F-C127-BC81-1695-C4BA9385ADA8</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,0,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="0F0BCF50-23DE-7D8F-C76C-98258BD00D52">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>590AD963-2FB7-A1DC-EE8F-545FE44C571B</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="number" id="7169B562-AF55-18EF-BC6E-597CBF24499D">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>49660378-B0F2-F05F-71EA-7F053A5E4940</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,0,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Major_Code" id="A6EC780C-F08A-57FC-4253-4B972F4853A8">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>53B5FF1F-C026-CEE4-A047-3405CF3476B4</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18D090D3-D5A2-04C8-8ABB-EFA220347637" referredColumn="7A9C7424-F424-AC88-660E-C9919044841E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F147A56F-6FE3-29F9-8D53-63CC0CFAC23A" name="Course_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>7D56A9B4-FEA5-D1D7-A19A-F5546BC2253D</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD4C974B-F34A-97DA-D157-5EE6A5AD1741"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C40A61E7-9D41-7354-FF0F-8E97FB632C88" name="Course_Major_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>C6BC0F0F-B63F-390F-D91C-0BE66FD4B9CD</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6EC780C-F08A-57FC-4253-4B972F4853A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -50,7 +50,7 @@ public class SuperManager {
         }
         return new OperationResult(false,message);
     }
-    public LinkedList<String> getDepartmentsNames(){
+    public static LinkedList<String> getDepartmentsNames(){
         try{
             ResultSet rs = connection.executeQuery("select department.name from department");
             LinkedList<String> names = new LinkedList<>();

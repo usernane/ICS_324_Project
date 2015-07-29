@@ -13,16 +13,14 @@
    <object objectType="Entity" objectID="CE27BC14-DCC8-8332-61F2-EADAFEBF8C3C" name="Student" seqName="seg_0"/>
    <object objectType="Relation" objectID="C6BC0F0F-B63F-390F-D91C-0BE66FD4B9CD" name="Belongs_to" seqName="seg_0"/>
    <object objectType="Relation" objectID="9AE15F87-FD4C-B0D9-E9E1-413F96F1259A" name="Can_Reg" seqName="seg_0"/>
-   <object objectType="Relation" objectID="65B7AF39-C2AC-21AA-680E-4AA8FACB063D" name="Can_add" seqName="seg_0"/>
-   <object objectType="Relation" objectID="8A863DB2-2F90-C2D2-B57C-9F7B2E53505D" name="Can_assign" seqName="seg_0"/>
    <object objectType="Relation" objectID="80329D15-941C-12F2-F0EE-6AB2D4C07D83" name="Can_have" seqName="seg_0"/>
    <object objectType="Relation" objectID="AF1EDFC2-A07E-DB76-06DC-1EC51C798F11" name="Can_havev1" seqName="seg_0"/>
    <object objectType="Relation" objectID="C6EAFBF7-7F7C-5BE2-16E9-A21FC232B86F" name="Has_Grade_Cutoffs" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D592C07F-3B3F-FCA7-0679-F55274701ACE" name="Has_Grading_Component" seqName="seg_0"/>
    <object objectType="Relation" objectID="107DD777-925E-8BF3-D659-5731DAEAA215" name="Has_a" seqName="seg_0"/>
-   <object objectType="Relation" objectID="4F971256-95F8-E3B4-BDCE-0E2ED3B1F75F" name="Has_av1" seqName="seg_0"/>
    <object objectType="Relation" objectID="27009152-B43C-7FE2-E460-7AE1B631ECD0" name="Have_dep" seqName="seg_0"/>
    <object objectType="Relation" objectID="AD154A3A-8C74-78E0-5971-E4792FB781D5" name="Have_majors" seqName="seg_0"/>
    <object objectType="Relation" objectID="D39D4827-D22E-10EC-B52C-A920D8489A55" name="Teaches" seqName="seg_0"/>
-   <object objectType="Relation" objectID="9042E062-3B65-FBB8-997D-A3B05B959FD7" name="Will_have" seqName="seg_0"/>
+   <object objectType="Relation" objectID="6F34E956-6F6B-EA2C-43DB-3072222C979B" name="Will_Have" seqName="seg_0"/>
    <object objectType="Relation" objectID="919CFEE3-5978-8134-D20E-6A2DEA59BDFC" name="Will_have_points" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

@@ -1,28 +1,26 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
-   <object objectType="Table" objectID="98CCEABD-1853-51B9-0514-E0FDCEF00E23" name="College" seqName="seg_0"/>
-   <object objectType="Table" objectID="BF7AF374-0B2A-82EB-4BD8-59797ECB7E9C" name="Course" seqName="seg_0"/>
-   <object objectType="Table" objectID="7CEC0A8B-FB49-5722-0403-D59392853821" name="Department" seqName="seg_0"/>
-   <object objectType="Table" objectID="331B7B97-37DA-34FE-A349-1B591664F43F" name="Enrollment" seqName="seg_0"/>
-   <object objectType="Table" objectID="16C5828B-D3F5-7965-4F35-0B404EB99A1F" name="Grade_Cutoffs" seqName="seg_0"/>
-   <object objectType="Table" objectID="CA89DA63-A30D-29FC-19DA-56D0D3050A2C" name="Grading_Component" seqName="seg_0"/>
-   <object objectType="Table" objectID="4FB36592-6342-B4D3-E11B-AC79C273B908" name="Instructor" seqName="seg_0"/>
-   <object objectType="Table" objectID="060D738E-340D-8642-4812-217271CFD5D1" name="Major" seqName="seg_0"/>
-   <object objectType="Table" objectID="78406E4C-C5CF-58F5-835E-0BB420A71E01" name="Point" seqName="seg_0"/>
-   <object objectType="Table" objectID="84A652F9-1CDB-9968-5676-19D73735859D" name="Section" seqName="seg_0"/>
-   <object objectType="Table" objectID="24817642-3245-D85D-645C-4C58863FE2DB" name="Student" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="C8DBF756-25C7-2AE2-7555-673A8C84C5F1" name="Course_Major_FK" seqName="seg_0" containerID="BF7AF374-0B2A-82EB-4BD8-59797ECB7E9C" refContainerID="060D738E-340D-8642-4812-217271CFD5D1"/>
-   <object objectType="FKIndexAssociation" objectID="208217EF-0513-B5B1-BFCC-42A5E28CE374" name="Department_College_FK" seqName="seg_0" containerID="7CEC0A8B-FB49-5722-0403-D59392853821" refContainerID="98CCEABD-1853-51B9-0514-E0FDCEF00E23"/>
-   <object objectType="FKIndexAssociation" objectID="7E8D2986-8C44-9472-45F8-AB09E3D85FBC" name="Enrollment_Section_FK" seqName="seg_0" containerID="331B7B97-37DA-34FE-A349-1B591664F43F" refContainerID="84A652F9-1CDB-9968-5676-19D73735859D"/>
-   <object objectType="FKIndexAssociation" objectID="22D4A64C-792E-3953-90E3-3446537078DD" name="Enrollment_Student_FK" seqName="seg_0" containerID="331B7B97-37DA-34FE-A349-1B591664F43F" refContainerID="24817642-3245-D85D-645C-4C58863FE2DB"/>
-   <object objectType="FKIndexAssociation" objectID="A2D8C992-E70A-BA35-8668-10DCF75C5925" name="Grade_Cutoffs_Section_FK" seqName="seg_0" containerID="16C5828B-D3F5-7965-4F35-0B404EB99A1F" refContainerID="84A652F9-1CDB-9968-5676-19D73735859D"/>
-   <object objectType="FKIndexAssociation" objectID="5756EC9B-6B39-CE59-E7F0-12535D611C2B" name="Grading_Component_Course_FK" seqName="seg_0" containerID="CA89DA63-A30D-29FC-19DA-56D0D3050A2C" refContainerID="BF7AF374-0B2A-82EB-4BD8-59797ECB7E9C"/>
-   <object objectType="FKIndexAssociation" objectID="BF97697F-03F4-1988-2E15-BA6CF3C35C07" name="Grading_Component_Instructor_FK" seqName="seg_0" containerID="CA89DA63-A30D-29FC-19DA-56D0D3050A2C" refContainerID="4FB36592-6342-B4D3-E11B-AC79C273B908"/>
-   <object objectType="FKIndexAssociation" objectID="C30C3D50-1D51-4D9F-216F-8B05BA0261FA" name="Major_Department_FK" seqName="seg_0" containerID="060D738E-340D-8642-4812-217271CFD5D1" refContainerID="7CEC0A8B-FB49-5722-0403-D59392853821"/>
-   <object objectType="FKIndexAssociation" objectID="4619E332-F2A3-9ABD-A52B-34F7B9D9562F" name="Point_Enrollment_FK" seqName="seg_0" containerID="78406E4C-C5CF-58F5-835E-0BB420A71E01" refContainerID="331B7B97-37DA-34FE-A349-1B591664F43F"/>
-   <object objectType="FKIndexAssociation" objectID="87BD53DC-8B62-7D44-4E62-4E4B3929456B" name="Point_Grading_Component_FK" seqName="seg_0" containerID="78406E4C-C5CF-58F5-835E-0BB420A71E01" refContainerID="CA89DA63-A30D-29FC-19DA-56D0D3050A2C"/>
-   <object objectType="FKIndexAssociation" objectID="468C0410-ED7A-DFE1-0870-84EAF402ECC9" name="Point_Instructor_FK" seqName="seg_0" containerID="78406E4C-C5CF-58F5-835E-0BB420A71E01" refContainerID="4FB36592-6342-B4D3-E11B-AC79C273B908"/>
-   <object objectType="FKIndexAssociation" objectID="DD95E4DA-3F27-78D5-E820-6D7B21050590" name="Section_Course_FK" seqName="seg_0" containerID="84A652F9-1CDB-9968-5676-19D73735859D" refContainerID="BF7AF374-0B2A-82EB-4BD8-59797ECB7E9C"/>
-   <object objectType="FKIndexAssociation" objectID="A54CE19C-C1A5-4411-5E90-B4BA153172BD" name="Section_Instructor_FK" seqName="seg_0" containerID="84A652F9-1CDB-9968-5676-19D73735859D" refContainerID="4FB36592-6342-B4D3-E11B-AC79C273B908"/>
-   <object objectType="FKIndexAssociation" objectID="92804C8D-C482-24F2-8900-DFEF478D05DD" name="Student_Major_FK" seqName="seg_0" containerID="24817642-3245-D85D-645C-4C58863FE2DB" refContainerID="060D738E-340D-8642-4812-217271CFD5D1"/>
+   <object objectType="Table" objectID="9AAFB681-C22F-49F8-45AA-D09F0C24DAE8" name="College" seqName="seg_0"/>
+   <object objectType="Table" objectID="62F558FB-6C98-903F-EF7A-F7409080B78F" name="Course" seqName="seg_0"/>
+   <object objectType="Table" objectID="01C85875-FF5C-D24C-A857-7FB820F90E8A" name="Department" seqName="seg_0"/>
+   <object objectType="Table" objectID="180D8CCF-49C4-B7E8-609F-CC93C4E1AB03" name="Enrollment" seqName="seg_0"/>
+   <object objectType="Table" objectID="1444231E-8EC2-A833-3F58-C15AAAEAACCA" name="Grade_Cutoffs" seqName="seg_0"/>
+   <object objectType="Table" objectID="83A022A5-754E-1D45-7832-E060D2133158" name="Grading_Component" seqName="seg_0"/>
+   <object objectType="Table" objectID="95CD4895-D107-979B-BA33-752E27D8A109" name="Instructor" seqName="seg_0"/>
+   <object objectType="Table" objectID="233A237A-49B9-AD20-0C76-660FE8605D0C" name="Major" seqName="seg_0"/>
+   <object objectType="Table" objectID="4AD8CA60-27C6-314E-2065-E384A54E5CC2" name="Point" seqName="seg_0"/>
+   <object objectType="Table" objectID="AE8B63A8-96DE-44E7-A623-7D9D4A4C9FCD" name="Section" seqName="seg_0"/>
+   <object objectType="Table" objectID="E5E2F6E9-C32D-E11B-B527-5D0A80B22EB8" name="Student" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C0F6FB22-4083-76DB-3E57-C3E7C15C8C41" name="Course_Major_FK" seqName="seg_0" containerID="62F558FB-6C98-903F-EF7A-F7409080B78F" refContainerID="233A237A-49B9-AD20-0C76-660FE8605D0C"/>
+   <object objectType="FKIndexAssociation" objectID="6077B630-2364-04C8-2FA5-9B58E223C3DD" name="Department_College_FK" seqName="seg_0" containerID="01C85875-FF5C-D24C-A857-7FB820F90E8A" refContainerID="9AAFB681-C22F-49F8-45AA-D09F0C24DAE8"/>
+   <object objectType="FKIndexAssociation" objectID="51D8B38D-E57C-DB51-7FE7-45A4D5BCB24C" name="Enrollment_Section_FK" seqName="seg_0" containerID="180D8CCF-49C4-B7E8-609F-CC93C4E1AB03" refContainerID="AE8B63A8-96DE-44E7-A623-7D9D4A4C9FCD"/>
+   <object objectType="FKIndexAssociation" objectID="2303201E-8F4B-0AA5-021E-1B65AC0A54D9" name="Enrollment_Student_FK" seqName="seg_0" containerID="180D8CCF-49C4-B7E8-609F-CC93C4E1AB03" refContainerID="E5E2F6E9-C32D-E11B-B527-5D0A80B22EB8"/>
+   <object objectType="FKIndexAssociation" objectID="8B7E00EF-4306-FDED-8FF2-8A2143E46AE4" name="Grade_Cutoffs_Section_FK" seqName="seg_0" containerID="1444231E-8EC2-A833-3F58-C15AAAEAACCA" refContainerID="AE8B63A8-96DE-44E7-A623-7D9D4A4C9FCD"/>
+   <object objectType="FKIndexAssociation" objectID="65F283E5-AE06-7029-F0BC-C15F65335C8B" name="Grading_Component_Section_FK" seqName="seg_0" containerID="83A022A5-754E-1D45-7832-E060D2133158" refContainerID="AE8B63A8-96DE-44E7-A623-7D9D4A4C9FCD"/>
+   <object objectType="FKIndexAssociation" objectID="7E8FC7F0-671E-F85D-8ED4-C1FE79A6682E" name="Major_Department_FK" seqName="seg_0" containerID="233A237A-49B9-AD20-0C76-660FE8605D0C" refContainerID="01C85875-FF5C-D24C-A857-7FB820F90E8A"/>
+   <object objectType="FKIndexAssociation" objectID="F52FDB49-9FE2-45BF-12FB-4B02E7177817" name="Point_Enrollment_FK" seqName="seg_0" containerID="4AD8CA60-27C6-314E-2065-E384A54E5CC2" refContainerID="180D8CCF-49C4-B7E8-609F-CC93C4E1AB03"/>
+   <object objectType="FKIndexAssociation" objectID="B7FC9EF2-2D0E-D72D-D770-35EB11447F13" name="Point_Grading_Component_FK" seqName="seg_0" containerID="4AD8CA60-27C6-314E-2065-E384A54E5CC2" refContainerID="83A022A5-754E-1D45-7832-E060D2133158"/>
+   <object objectType="FKIndexAssociation" objectID="B564DD2E-6EF9-566D-F753-DC330D81C72C" name="Section_Course_FK" seqName="seg_0" containerID="AE8B63A8-96DE-44E7-A623-7D9D4A4C9FCD" refContainerID="62F558FB-6C98-903F-EF7A-F7409080B78F"/>
+   <object objectType="FKIndexAssociation" objectID="8EDE7BFC-153D-12E3-53DB-9FA50FEB0D7E" name="Section_Instructor_FK" seqName="seg_0" containerID="AE8B63A8-96DE-44E7-A623-7D9D4A4C9FCD" refContainerID="95CD4895-D107-979B-BA33-752E27D8A109"/>
+   <object objectType="FKIndexAssociation" objectID="D5F6878B-3ACB-62BC-196A-EFB838A45549" name="Student_Major_FK" seqName="seg_0" containerID="E5E2F6E9-C32D-E11B-B527-5D0A80B22EB8" refContainerID="233A237A-49B9-AD20-0C76-660FE8605D0C"/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>

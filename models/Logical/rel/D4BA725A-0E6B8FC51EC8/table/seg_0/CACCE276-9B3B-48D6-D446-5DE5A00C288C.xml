@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CACCE276-9B3B-48D6-D446-5DE5A00C288C" name="Point">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>D2A3D51E-6B86-AA4B-5AD3-83957D63EF2C</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="earned_points" id="9F380DD6-29D7-562F-F902-4D0372CB9CC3">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>D0A2343B-BC7D-A156-8A40-5562B03C83F7</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,0,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Enrollment_Student_id" id="0C8A6199-72EE-B192-1C19-4210E11060B8">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>78D9ED0C-83EF-1F00-2C1C-7548CE0DB7E4</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>9</dataTypeScale>
+<ownDataTypeParameters>,0,9</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A433119-7C06-2A2A-6CE4-EE4059B5AEF8" referredColumn="CDB31BB8-CF9A-09A4-4080-4911BBB6A611"/>
+</associations>
+</Column>
+<Column name="Enrollment_Section_reference_number" id="1C8219AA-ED37-5A49-9949-BFF5AB6DF679">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>C390AF61-1405-C249-A3B7-6E06021C8D8D</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A433119-7C06-2A2A-6CE4-EE4059B5AEF8" referredColumn="694E0DA4-D66A-4F2D-6DCA-095DD8BDACB7"/>
+</associations>
+</Column>
+<Column name="Grading_Component_id" id="449F1BF7-5A8E-17B4-0D12-484259C962B1">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>39251E6F-365C-5F75-02AD-065BD4361373</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8FFAF0B-188D-6F13-2510-15C99AA062AD" referredColumn="457BEED0-1DCC-D915-76D1-9472AF6691BE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ABD9DDC7-3F2C-290F-F644-037C1BA976A0" name="Point_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>852C34B2-E2C4-F5B8-3E27-651B7E0C2FFA</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="0638A684-5760-3114-2648-4631DD575032" name="Point_Grading_Component_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>6F34E956-6F6B-EA2C-43DB-3072222C979B</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="449F1BF7-5A8E-17B4-0D12-484259C962B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAA7A92C-3C0D-50DD-B745-3EE2C66A8200" name="Point_Enrollment_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 13:04:34 UTC</createdTime>
+<generatorID>919CFEE3-5978-8134-D20E-6A2DEA59BDFC</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C8219AA-ED37-5A49-9949-BFF5AB6DF679"/>
+<colUsage columnID="0C8A6199-72EE-B192-1C19-4210E11060B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

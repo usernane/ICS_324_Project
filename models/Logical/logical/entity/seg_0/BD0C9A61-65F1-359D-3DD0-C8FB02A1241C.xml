@@ -16,7 +16,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="reference number" id="5340296E-131A-0EBC-CFC5-EADE48F12361">
+<Attribute name="ref_num" id="5340296E-131A-0EBC-CFC5-EADE48F12361">
 <createdBy>Ibrahim</createdBy>
 <createdTime>2015-07-28 01:05:29 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
@@ -27,24 +27,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>6 CHAR</dataTypeSize>
-<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="section number" id="2F7316DE-A03C-71BA-BAA9-C0C2562E039F">
-<createdBy>Ibrahim</createdBy>
-<createdTime>2015-07-28 01:05:54 UTC</createdTime>
-<ownerDesignName>Logical</ownerDesignName>
-<engineerTo>
-<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
-<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,0,2</ownDataTypeParameters>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Instructor id" id="FC36FC16-663F-F4C0-8CA4-B03560FF73F5">
 <createdBy>Ibrahim</createdBy>
@@ -63,7 +47,7 @@
 <dataTypeScale>9</dataTypeScale>
 <ownDataTypeParameters>,0,9</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Course number" id="4BCB8C81-A320-7499-0A17-17C0AD85EEC6">
+<Attribute name="id" id="4BCB8C81-A320-7499-0A17-17C0AD85EEC6">
 <createdBy>Ibrahim</createdBy>
 <createdTime>2015-07-28 01:18:14 UTC</createdTime>
 <generatorID>107DD777-925E-8BF3-D659-5731DAEAA215</generatorID>

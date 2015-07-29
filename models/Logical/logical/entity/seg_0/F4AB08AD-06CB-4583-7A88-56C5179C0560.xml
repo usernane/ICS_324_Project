@@ -4,6 +4,7 @@
 <createdTime>2015-07-28 01:12:42 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
+<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
 <item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -15,11 +16,12 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="number" id="92CAE56F-C127-BC81-1695-C4BA9385ADA8">
+<Attribute name="id" id="92CAE56F-C127-BC81-1695-C4BA9385ADA8">
 <createdBy>Ibrahim</createdBy>
 <createdTime>2015-07-28 01:12:52 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
+<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
 <item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
@@ -34,6 +36,7 @@
 <createdTime>2015-07-28 01:13:19 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
+<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
 <item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
@@ -43,11 +46,12 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="level" id="49660378-B0F2-F05F-71EA-7F053A5E4940">
+<Attribute name="number" id="49660378-B0F2-F05F-71EA-7F053A5E4940">
 <createdBy>Ibrahim</createdBy>
 <createdTime>2015-07-28 01:13:56 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
+<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
 <item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
@@ -64,6 +68,7 @@
 <generatorID>C6BC0F0F-B63F-390F-D91C-0BE66FD4B9CD</generatorID>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
+<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
 <item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
 </engineerTo>
 <referedAttribute>F6F988F4-7DDF-407D-9341-731EEB81EF2B</referedAttribute>
@@ -81,6 +86,7 @@
 <ownerDesignName>Logical</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
+<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
 <item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="false"/>
 </engineerTo>
 <pk>true</pk>
