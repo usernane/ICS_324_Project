@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Has_Grade_Cutoffs" directorySegmentName="seg_0" id="C6EAFBF7-7F7C-5BE2-16E9-A21FC232B86F">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:36:20 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<sourcePk>BA18C0F9-09B2-5F42-B310-F62B5491AC42</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BD0C9A61-65F1-359D-3DD0-C8FB02A1241C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B87A339D-F513-01F4-B961-5DC0447383E4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

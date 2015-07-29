@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CE27BC14-DCC8-8332-61F2-EADAFEBF8C3C" name="Student">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B87A339D-F513-01F4-B961-5DC0447383E4" name="Grade_Cutoffs">
 <createdBy>Ibrahim</createdBy>
-<createdTime>2015-07-28 00:56:24 UTC</createdTime>
+<createdTime>2015-07-29 11:34:36 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
 <item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
@@ -16,82 +16,64 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="9D71AB96-8A68-082A-F95D-BB9E6567F5B9">
+<Attribute name="Letter_grade" id="4584A289-77BF-A8F3-7AD4-BE5B35387EE8">
 <createdBy>Ibrahim</createdBy>
-<createdTime>2015-07-28 00:56:38 UTC</createdTime>
+<createdTime>2015-07-29 11:34:50 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
 <item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
 <item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="value" id="D20D7EE9-F5E4-B53F-444B-671B962860F3">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:35:46 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>9</dataTypeScale>
-<ownDataTypeParameters>,0,9</ownDataTypeParameters>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="first_name" id="18AA0470-CCFB-BDDA-727A-337733E252CB">
+<Attribute name="reference number" id="BA03D7F1-2B34-BED1-1B8B-418CECD84E0C">
 <createdBy>Ibrahim</createdBy>
-<createdTime>2015-07-28 00:57:12 UTC</createdTime>
+<createdTime>2015-07-29 11:36:20 UTC</createdTime>
+<generatorID>C6EAFBF7-7F7C-5BE2-16E9-A21FC232B86F</generatorID>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
 <item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
 <item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5340296E-131A-0EBC-CFC5-EADE48F12361</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>15 CHAR</dataTypeSize>
-<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="last_name" id="42DE02C6-9D78-3796-E809-6D1CB9892E6F">
-<createdBy>Ibrahim</createdBy>
-<createdTime>2015-07-28 00:57:45 UTC</createdTime>
-<ownerDesignName>Logical</ownerDesignName>
-<engineerTo>
-<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
-<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>15 CHAR</dataTypeSize>
-<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Code" id="4FB1061C-5AFA-C35F-3FE8-938E99C5305C">
-<createdBy>Ibrahim</createdBy>
-<createdTime>2015-07-28 01:02:19 UTC</createdTime>
-<generatorID>80329D15-941C-12F2-F0EE-6AB2D4C07D83</generatorID>
-<ownerDesignName>Logical</ownerDesignName>
-<engineerTo>
-<item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
-<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
-</engineerTo>
-<referedAttribute>F6F988F4-7DDF-407D-9341-731EEB81EF2B</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>5 CHAR</dataTypeSize>
-<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="FA261DDD-EA0E-1366-B69E-DB01D16F92DB" name="Student PK">
+<identifier id="87B91FD9-FAAB-2384-14C7-C86DDC1638BF" name="Grade_Cutoffs PK">
 <createdBy>Ibrahim</createdBy>
-<createdTime>2015-07-28 00:57:05 UTC</createdTime>
+<createdTime>2015-07-29 11:36:20 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="DBA5B1DE-6D90-04E8-3258-F4746F5ED0DE" value="true"/>
-<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="false"/>
+<item key="D4BA725A-8491-E79E-0AF1-0E6B8FC51EC8" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<usedAttributes>
-<attributeRef>9D71AB96-8A68-082A-F95D-BB9E6567F5B9</attributeRef>
-</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78406E4C-C5CF-58F5-835E-0BB420A71E01" name="Point">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:37:41 UTC</createdTime>
+<generatorID>D2A3D51E-6B86-AA4B-5AD3-83957D63EF2C</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Grading_Component_id" id="78724B68-CC6B-4F5A-B4EF-FB197D52D521">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:37:41 UTC</createdTime>
+<generatorID>650F45EA-FE78-17EB-A4D5-50956B239ECF</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,0,3</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87BD53DC-8B62-7D44-4E62-4E4B3929456B" referredColumn="9F505EDD-A41C-3B23-4C88-AF340335618A"/>
+</associations>
+</Column>
+<Column name="earned_points" id="E80664A6-FA7A-3C24-5766-51CFB9696AB4">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:37:41 UTC</createdTime>
+<generatorID>D0A2343B-BC7D-A156-8A40-5562B03C83F7</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,0,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Enrollment_Student_id" id="18A0154D-BD06-D995-2652-EBC245C8A5EA">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:37:41 UTC</createdTime>
+<generatorID>78D9ED0C-83EF-1F00-2C1C-7548CE0DB7E4</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>9</dataTypeScale>
+<ownDataTypeParameters>,0,9</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4619E332-F2A3-9ABD-A52B-34F7B9D9562F" referredColumn="F8B1C30C-7A2F-7BC3-1242-1DC717001509"/>
+</associations>
+</Column>
+<Column name="Enrollment_Section_reference_number" id="4E38175B-90C6-E75E-02CC-F231F767C29E">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:37:41 UTC</createdTime>
+<generatorID>C390AF61-1405-C249-A3B7-6E06021C8D8D</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4619E332-F2A3-9ABD-A52B-34F7B9D9562F" referredColumn="6BDEE808-9D09-14A4-D725-DFFC86FA206B"/>
+</associations>
+</Column>
+<Column name="Instructor_id" id="671E3E5C-2D48-2E1A-1701-AC01DE7DCFC8">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:37:41 UTC</createdTime>
+<generatorID>36ED2AEA-0E19-D4F5-3D8B-8850EB8B08C6</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>9</dataTypeScale>
+<ownDataTypeParameters>,0,9</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="468C0410-ED7A-DFE1-0870-84EAF402ECC9" referredColumn="6D3C6ED6-45D3-138A-31D8-44FF58BB3753"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B5410E26-83FC-D479-5A77-9CADBB139273" name="Point_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:37:41 UTC</createdTime>
+<generatorID>852C34B2-E2C4-F5B8-3E27-651B7E0C2FFA</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="8EA90140-902D-4637-AA86-EADBBBFF8DAB" name="Point_Instructor_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:37:41 UTC</createdTime>
+<generatorID>8A863DB2-2F90-C2D2-B57C-9F7B2E53505D</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="671E3E5C-2D48-2E1A-1701-AC01DE7DCFC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13E7D789-9A9F-E4AD-833F-07CA764B9EEA" name="Point_Grading_Component_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:37:41 UTC</createdTime>
+<generatorID>9042E062-3B65-FBB8-997D-A3B05B959FD7</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78724B68-CC6B-4F5A-B4EF-FB197D52D521"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7827F0ED-B977-BA7E-88F5-0993A3C3D1C3" name="Point_Enrollment_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-07-29 11:37:41 UTC</createdTime>
+<generatorID>919CFEE3-5978-8134-D20E-6A2DEA59BDFC</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E38175B-90C6-E75E-02CC-F231F767C29E"/>
+<colUsage columnID="18A0154D-BD06-D995-2652-EBC245C8A5EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
