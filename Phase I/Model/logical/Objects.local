@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="81ACDD4E-7955-B3CA-1175-BF4928A55FCD" name="College" seqName="seg_0"/>
+   <object objectType="Entity" objectID="ACE4FEA7-EB1B-F50F-86B4-D05C4B9832E0" name="Course" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BCCBF552-3266-5217-34E4-001781E37F0C" name="Department" seqName="seg_0"/>
+   <object objectType="Entity" objectID="A9D3F13A-A3D0-9169-4CE3-FFB434E370D5" name="Enrollment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="5215899A-DA6C-F5B9-D0FA-9FA0BF83FDA8" name="Grading_Component" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E4A3319E-086D-286B-A8E0-24E4139C564C" name="Instructor" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E8ADF7EB-2552-F21F-D781-CBC03DE48516" name="Major" seqName="seg_0"/>
+   <object objectType="Entity" objectID="0C30BE4B-B4F7-282D-30BC-F5B94E1ACAA9" name="Point" seqName="seg_0"/>
+   <object objectType="Entity" objectID="EB93DD6B-87F1-7096-731D-01E441DAAA99" name="Section" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D375AEE5-7F08-713E-F9BD-71E9FB38762A" name="Student" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BEA3FB63-0D62-111C-CC73-20340B88759A" name="Can_create" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7469407B-3016-1B9B-B113-56A2CFD50E3E" name="Can_enroll" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AC51D1D8-30EB-926D-76FF-479F9A2FBC5A" name="Can_have_grading_components" seqName="seg_0"/>
+   <object objectType="Relation" objectID="418A986C-AD63-866C-DF4C-BDEB9972A1E2" name="Have_Points" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7640E168-2ED4-9D91-CFFA-66726CA36B11" name="Offers" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7B307E3C-C60A-6378-5C9D-CAA8C621B1ED" name="Student_will_have" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2FC4E05A-626A-41B9-57A6-75E32804CF85" name="Teaches" seqName="seg_0"/>
+   <object objectType="Relation" objectID="62725CE7-95E9-7DA9-8587-0CE90D4F8562" name="Will_have_departments" seqName="seg_0"/>
+   <object objectType="Relation" objectID="6F33FF17-5A33-F6BC-C623-29CC7B0A9AF1" name="enrollment_has_points" seqName="seg_0"/>
+   <object objectType="Relation" objectID="26FFC99B-404A-4A55-D70F-8131B4541E02" name="have_enrollments" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2149BB28-C030-69C5-D2D8-26DB3D42296C" name="major_have_courses" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

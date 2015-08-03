@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E8ADF7EB-2552-F21F-D781-CBC03DE48516" name="Major">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 18:59:06 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="name" id="A5882CD9-669D-6BA0-9B42-D0AFD2BDAFE9">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 18:59:21 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="code" id="732D0826-DA45-057B-4A14-18D2DF175E0A">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 18:59:54 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="93383600-6E07-DC99-0436-7E44FF15621C">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:14:45 UTC</createdTime>
+<generatorID>7640E168-2ED4-9D91-CFFA-66726CA36B11</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<referedAttribute>3918411A-E604-F886-B9AF-67B8582642F4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0CA29214-FC01-7918-F643-E94F1A3551AE" name="Major PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 19:00:12 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>732D0826-DA45-057B-4A14-18D2DF175E0A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

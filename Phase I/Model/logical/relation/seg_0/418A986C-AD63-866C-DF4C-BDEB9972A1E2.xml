@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Have_Points" directorySegmentName="seg_0" id="418A986C-AD63-866C-DF4C-BDEB9972A1E2">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:22:17 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<sourcePk>8EF13785-44F5-CF7A-7639-312905A90164</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5215899A-DA6C-F5B9-D0FA-9FA0BF83FDA8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0C30BE4B-B4F7-282D-30BC-F5B94E1ACAA9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA4ADC29-793D-E20E-1BEB-9D31EC8432E7" name="Grading_Component">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>5215899A-DA6C-F5B9-D0FA-9FA0BF83FDA8</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="AB3EC3FA-BC16-4494-9993-A5A620132863">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>CE9E8B84-1939-26A5-6F7F-40BD1404C93D</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,0,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="9A5D06C4-CD33-2FBC-6698-2852DFB2EABB">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>E1B97516-F18A-3F32-43A7-76BC2890C719</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="max_points" id="1BDF96B4-8F1B-161A-A3FE-4C9C5BD262B8">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>97C8CC04-6D47-50AF-54CF-4B7B887D24EC</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="weight" id="2597B3E7-2824-9BC9-538F-9BAF709F8CFB">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>8FE68C49-FE88-CAC8-BDD2-66AD7DD88085</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Course_number" id="4FCA6FAF-9BD7-2A7E-8D6B-943C207571C9">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>E20BA5FB-8890-DCB9-E507-3D816ED14097</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,0,4</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2258EE0-8870-70FE-7D5E-6112320BB1B7" referredColumn="4ADED6E5-D83F-9B24-D091-C31579748834"/>
+</associations>
+</Column>
+<Column name="Instructor_Instructor_ID" id="320060D6-2F25-3474-230D-B391F112DFBA">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8D21C31-F539-5F45-EC78-115B02D95C67" referredColumn="AB5496EB-DB5D-CD31-9A88-9B18712BA55D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5489B69-51DF-CABC-3554-884777C6A273" name="Grading_Component_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>8EF13785-44F5-CF7A-7639-312905A90164</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB3EC3FA-BC16-4494-9993-A5A620132863"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25389441-884D-0D09-050F-9F2A099DB4B9" name="Grading_Component_Instructor_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>BEA3FB63-0D62-111C-CC73-20340B88759A</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="320060D6-2F25-3474-230D-B391F112DFBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FBBC934-55AD-4C5B-495F-B791EC0DA82A" name="Grading_Component_Course_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:29 UTC</createdTime>
+<generatorID>AC51D1D8-30EB-926D-76FF-479F9A2FBC5A</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FCA6FAF-9BD7-2A7E-8D6B-943C207571C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

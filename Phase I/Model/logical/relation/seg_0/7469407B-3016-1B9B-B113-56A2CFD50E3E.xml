@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Can_enroll" directorySegmentName="seg_0" id="7469407B-3016-1B9B-B113-56A2CFD50E3E">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:16:27 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<sourcePk>7E5BE567-EFDA-FF3B-4C47-6D7D3D8D6AF7</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D375AEE5-7F08-713E-F9BD-71E9FB38762A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A9D3F13A-A3D0-9169-4CE3-FFB434E370D5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

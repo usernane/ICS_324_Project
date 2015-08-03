@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="have_enrollments" directorySegmentName="seg_0" id="26FFC99B-404A-4A55-D70F-8131B4541E02">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:16:53 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<sourcePk>53D30854-F2C5-26F8-5F0A-A8797D72E986</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EB93DD6B-87F1-7096-731D-01E441DAAA99</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A9D3F13A-A3D0-9169-4CE3-FFB434E370D5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

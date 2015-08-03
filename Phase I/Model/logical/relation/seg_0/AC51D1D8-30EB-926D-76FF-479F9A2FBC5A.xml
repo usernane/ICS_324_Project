@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Can_have_grading_components" directorySegmentName="seg_0" id="AC51D1D8-30EB-926D-76FF-479F9A2FBC5A">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:24:16 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<sourcePk>41BF0245-BADE-1995-9C30-74E580222165</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ACE4FEA7-EB1B-F50F-86B4-D05C4B9832E0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5215899A-DA6C-F5B9-D0FA-9FA0BF83FDA8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

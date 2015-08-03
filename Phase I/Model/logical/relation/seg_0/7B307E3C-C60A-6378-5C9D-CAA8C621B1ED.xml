@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Student_will_have" directorySegmentName="seg_0" id="7B307E3C-C60A-6378-5C9D-CAA8C621B1ED">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:15:22 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<sourcePk>0CA29214-FC01-7918-F643-E94F1A3551AE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E8ADF7EB-2552-F21F-D781-CBC03DE48516</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D375AEE5-7F08-713E-F9BD-71E9FB38762A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

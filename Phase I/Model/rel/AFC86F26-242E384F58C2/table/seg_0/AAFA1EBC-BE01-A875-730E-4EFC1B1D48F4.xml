@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AAFA1EBC-BE01-A875-730E-4EFC1B1D48F4" name="Section">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:34:20 UTC</createdTime>
+<generatorID>EB93DD6B-87F1-7096-731D-01E441DAAA99</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="refrence_number" id="EBDDE491-C270-2278-AE20-E38424F9BFF1">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:34:20 UTC</createdTime>
+<generatorID>24CC20F0-4F6B-CFE4-C34B-565776531F86</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="number" id="99764E48-6C52-D6E5-7B0D-FB8BBF2DA3DA">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:34:20 UTC</createdTime>
+<generatorID>961F11A7-6EB0-2F2F-196A-58B386BA5670</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Instructor_id" id="471A8EDF-4669-4E85-D4CB-2E13B616CB12">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:34:20 UTC</createdTime>
+<generatorID>CC5D801B-426D-C8F6-D203-772CDD4E5389</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>9</dataTypeScale>
+<ownDataTypeParameters>,0,9</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B87A7F0F-5A06-600C-FFB5-97BEA81C7B9C" referredColumn="08AB90DD-03F3-7477-CBC9-DC4C5FB2B44C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2A6CB3D-DB82-BE4D-D429-1A39CC77F860" name="Section_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:34:20 UTC</createdTime>
+<generatorID>53D30854-F2C5-26F8-5F0A-A8797D72E986</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBDDE491-C270-2278-AE20-E38424F9BFF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DD0E4B5-1AFD-C7EA-1D91-C02683516F1D" name="Section_Instructor_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:34:21 UTC</createdTime>
+<generatorID>2FC4E05A-626A-41B9-57A6-75E32804CF85</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="471A8EDF-4669-4E85-D4CB-2E13B616CB12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

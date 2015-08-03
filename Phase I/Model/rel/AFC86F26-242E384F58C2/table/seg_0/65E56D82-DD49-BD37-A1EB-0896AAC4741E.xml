@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65E56D82-DD49-BD37-A1EB-0896AAC4741E" name="Major">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>E8ADF7EB-2552-F21F-D781-CBC03DE48516</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="name" id="BC494ED6-5A74-FC1D-A413-6C56A28E37FF">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>A5882CD9-669D-6BA0-9B42-D0AFD2BDAFE9</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code" id="FD34790C-2D23-D858-89E6-5D36F094BCEF">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>732D0826-DA45-057B-4A14-18D2DF175E0A</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Department_id" id="77E90332-E156-59A4-7C52-571E6706FB8B">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>93383600-6E07-DC99-0436-7E44FF15621C</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E68349AB-0FDA-9252-A130-7B5131B31422" referredColumn="6033D8DB-37EE-8FB9-B4BC-67FE5003AA58"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="489B88DE-A0B5-60BC-4C36-14AD46FEFA34" name="Major_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:28 UTC</createdTime>
+<generatorID>0CA29214-FC01-7918-F643-E94F1A3551AE</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD34790C-2D23-D858-89E6-5D36F094BCEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86DE9298-F9B8-B70B-0449-D5DB5A228E73" name="Major_Department_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:25:29 UTC</createdTime>
+<generatorID>7640E168-2ED4-9D91-CFFA-66726CA36B11</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77E90332-E156-59A4-7C52-571E6706FB8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

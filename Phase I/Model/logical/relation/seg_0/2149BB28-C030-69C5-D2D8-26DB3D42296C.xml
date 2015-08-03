@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="major_have_courses" directorySegmentName="seg_0" id="2149BB28-C030-69C5-D2D8-26DB3D42296C">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-03 20:18:28 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+</engineerTo>
+<sourcePk>0CA29214-FC01-7918-F643-E94F1A3551AE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E8ADF7EB-2552-F21F-D781-CBC03DE48516</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ACE4FEA7-EB1B-F50F-86B4-D05C4B9832E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>
