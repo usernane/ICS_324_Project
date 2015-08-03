@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.table;
-
-import java.util.NoSuchElementException;
+package databaseapplication;
 
 /**
  *
  * @author Ibrahim
  */
-public class NoSuchRowException extends NoSuchElementException {
+public class Main {
 
-    public NoSuchRowException(int index) {
-        super("The row "+index+" was not found");
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
     }
     
 }
