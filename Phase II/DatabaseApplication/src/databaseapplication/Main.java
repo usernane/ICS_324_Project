@@ -24,10 +24,9 @@ public class Main {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         }
         catch(Exception ex){}
-       // SuperManager.startApp();
-        ConnectionManager m = new ConnectionManager("jdbc:derby://localhost:1527/AppDB","ibrahim","ibrahim");
-        m.openConnection();
-        m.insert("college","'A','Innformation','ccse'");
+        SuperManager.startApp();
+        ConnectionManager m = new ConnectionManager("jdbc:derby://localhost:1527/ProjectDB","ibrahim","ibrahim");
+
     }
     
 }

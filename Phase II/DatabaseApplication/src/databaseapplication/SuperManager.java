@@ -11,6 +11,7 @@ import databaseapplication.admin.AdminMainWindow;
 import databaseapplication.instructor.InstructorMainWindow;
 import databaseapplication.student.StudentMainWindow;
 import java.sql.ResultSet;
+import java.util.LinkedList;
 import javax.swing.JOptionPane;
 
 /**
@@ -55,7 +56,7 @@ public class SuperManager {
     }
     
     public static void startApp(){
-        connection = new ConnectionManager("jdbc:derby://localhost:1527/AppDB","ibrahim","ibrahim");
+        connection = new ConnectionManager("jdbc:derby://localhost:1527/ProjectDB","ibrahim","ibrahim");
         OperationResult r = connection.openConnection();
         if(r.getResult()){
             JOptionPane.showMessageDialog(null, r.getMessage(), "Connection State", JOptionPane.INFORMATION_MESSAGE);
@@ -86,6 +87,13 @@ public class SuperManager {
             else if(loginType.compareToIgnoreCase("instructor") == 0){
                 
             }
+        }
+        return null;
+    }
+
+    public static LinkedList<String> getTables() {
+        if(connection != null){
+            return connection.getTables();
         }
         return null;
     }
