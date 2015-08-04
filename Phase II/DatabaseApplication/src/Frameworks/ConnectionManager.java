@@ -30,9 +30,29 @@ public final class ConnectionManager {
             }
             this.password = password;
             this.url = url;
-            this.username = username;
+            this.username = userName;
+            openConnection();
 	}
-
+        /**
+         * Removes all entries from table.
+         * @param tableName name of the table
+         * @return <code>OperationResult</code> object.
+         */
+        public OperationResult deleteAll(String tableName){
+            String message = "Done!";
+            try{
+                Statement s = this.connection.createStatement();
+                s.executeUpdate("delete * "+tableName);
+                return new OperationResult(true, message);
+            }
+            catch(Exception ex){
+                return new OperationResult(false,ex.getMessage());
+            }
+        }
+        /**
+         * Close the currently open connection.
+         * @return <code>OperationResult</code> object.
+         */
 	public OperationResult closeConnection(){
             String message = "Connection Closed!";
             try{
@@ -45,9 +65,11 @@ public final class ConnectionManager {
 	}
 
 	/**
-	 * 
-	 * @param value
-	 * @param tableName
+	 * deletes a specific row from a table.
+	 * @param value the row that has the given value.
+         * @param column the column that has the value.
+	 * @param tableName the name of the table.
+         * @return <code>OperationResult</code> object.
 	 */
 	public OperationResult delete( String tableName, String column, String value){
             String message = "Done!";
@@ -63,8 +85,9 @@ public final class ConnectionManager {
 	}
 
 	/**
-	 * 
-	 * @param query
+	 * Executes a specific query.
+	 * @param query the query that will be executed
+         * @return <code>OperationResult</code> object.
 	 */
 	public OperationResult executeQuery(String query){
 		String message = "done";
@@ -77,15 +100,19 @@ public final class ConnectionManager {
                     return new OperationResult(false, ex.getMessage());
                 }
 	}
-
+        /**
+         * Returns the connection that is currently used for database management.
+         * @return <code>Connection</code> Object.
+         */
 	public Connection getConnection(){
 		return this.connection;
 	}
 
 	/**
-	 * 
-	 * @param value
-	 * @param tabelName
+	 * Insert new row in a table.
+	 * @param value the values that will be inserted.
+	 * @param tabelName the name of the table.
+         * @return <code>OperationResult</code> object.
 	 */
 	public OperationResult insert(String tabelName, String value){
             String message = "Done!";
@@ -98,11 +125,17 @@ public final class ConnectionManager {
                 return new OperationResult(false,ex.getMessage());
             }
 	}
-        
+        /**
+         * Returns the result set that is generated from executing a query. 
+         * @return <code>ResultSet</code> object.
+         */
         public ResultSet getResultSet(){
             return this.resultSet;
         }
-
+        /**
+         * Open the connection using the given url, username and password.
+         * @return <code>OperationResult</code> object.
+         */
 	public OperationResult openConnection(){
 		String message = "Connecion is open!";
             try{
