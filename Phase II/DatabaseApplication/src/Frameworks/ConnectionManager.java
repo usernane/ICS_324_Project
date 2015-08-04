@@ -42,7 +42,7 @@ public final class ConnectionManager {
             String message = "Done!";
             try{
                 Statement s = this.connection.createStatement();
-                s.executeUpdate("delete * "+tableName);
+                s.executeUpdate("delete * from "+tableName);
                 return new OperationResult(true, message);
             }
             catch(Exception ex){
