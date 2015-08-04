@@ -1,0 +1,31 @@
+Tue Aug 04 14:38:47 AST 2015 : Apache Derby Network Server - 10.8.2.2 - (1181258) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Tue Aug 04 14:38:48 AST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-014e-f881-b771-000002c33935 
+on database directory C:\Users\Ibrahim\Documents\GitHub\ICS_324_Project\DB\ProjectDB  with class loader sun.misc.Launcher$AppClassLoader@752a2259 
+Loaded from file:/C:/Program%20Files/Java/jdk1.7.0_25/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_25-b17
+user.dir=C:\Program Files\Java\jdk1.7.0_25\db
+derby.system.home=C:\Users\Ibrahim\Documents\GitHub\ICS_324_Project\DB
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Aug 04 14:38:50 AST 2015:
+Shutting down instance a816c00e-014e-f881-b771-000002c33935 on database directory C:\Users\Ibrahim\Documents\GitHub\ICS_324_Project\DB\ProjectDB with class loader sun.misc.Launcher$AppClassLoader@752a2259 
+Tue Aug 04 14:38:50 AST 2015 Thread[DRDAConnThread_4,5,main] (DATABASE = ProjectDB), (DRDAID = {2}), Database 'ProjectDB' shutdown.
+----------------------------------------------------------------
+Tue Aug 04 14:39:11 AST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance 6c44409f-014e-f881-b771-000002c33935 
+on database directory C:\Users\Ibrahim\Documents\GitHub\ICS_324_Project\DB\ProjectDB  with class loader sun.misc.Launcher$AppClassLoader@752a2259 
+Loaded from file:/C:/Program%20Files/Java/jdk1.7.0_25/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_25-b17
+user.dir=C:\Program Files\Java\jdk1.7.0_25\db
+derby.system.home=C:\Users\Ibrahim\Documents\GitHub\ICS_324_Project\DB
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Aug 04 14:40:07 AST 2015: Shutting down Derby engine
+----------------------------------------------------------------
+Tue Aug 04 14:40:07 AST 2015:
+Shutting down instance 6c44409f-014e-f881-b771-000002c33935 on database directory C:\Users\Ibrahim\Documents\GitHub\ICS_324_Project\DB\ProjectDB with class loader sun.misc.Launcher$AppClassLoader@752a2259 
+----------------------------------------------------------------

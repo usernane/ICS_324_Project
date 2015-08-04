@@ -27,7 +27,9 @@ public class SuperManager {
     private static void showLoginDialog(){
         LoginDialog d = new LoginDialog();
     }
-    
+    /**
+     * 
+     */
     public static void showMainWindow(){
         if(userType.compareToIgnoreCase("Admin") == 0){
             new AdminMainWindow();

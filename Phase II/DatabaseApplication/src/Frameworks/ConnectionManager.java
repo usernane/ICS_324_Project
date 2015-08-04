@@ -135,7 +135,7 @@ public final class ConnectionManager {
             String message = "Done!";
             try{
                 Statement s = this.connection.createStatement();
-                s.executeUpdate("insert into "+tabelName+" values"+value);
+                s.executeUpdate("insert into "+tabelName+" values ("+value+")");
                 return new OperationResult(true, message);
             }
             catch(Exception ex){
