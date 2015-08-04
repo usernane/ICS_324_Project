@@ -22,7 +22,7 @@ public class Main {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         }
         catch(Exception ex){}
-        new LoginDialog();
+        SuperManager.startApp();
     }
     
 }

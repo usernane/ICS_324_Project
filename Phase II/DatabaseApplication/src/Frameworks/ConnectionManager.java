@@ -24,14 +24,13 @@ public final class ConnectionManager {
 	 * @param userName
 	 * @param url
 	 */
-	public ConnectionManager(String password, String userName, String url){
+	public ConnectionManager(String url,String password, String userName){
             if(password == null || userName == null || url == null){
                 throw new NullPointerException("user name or password or the url is 'null'");
             }
             this.password = password;
             this.url = url;
             this.username = userName;
-            openConnection();
 	}
         /**
          * Removes all entries from table.
