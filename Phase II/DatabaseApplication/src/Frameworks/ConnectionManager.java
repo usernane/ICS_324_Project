@@ -1,9 +1,11 @@
 package Frameworks;
 
 import java.sql.Connection;
+import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.LinkedList;
 
 /**
  * @author Ibrahim
@@ -32,6 +34,22 @@ public final class ConnectionManager {
             this.url = url;
             this.username = userName;
 	}
+        public LinkedList<String> getTables(){
+            LinkedList<String> tablesNames = new LinkedList<>();
+            try{
+                DatabaseMetaData meta = this.connection.getMetaData();
+                String[] types = {"TABLE"};
+                ResultSet tables = meta.getTables(null, null, "%", types);
+                
+                while(tables.next()){
+                    tablesNames.add(tables.getString("TABLE_NAME"));
+                    
+                }
+                return tablesNames;
+            }
+            catch(Exception ex){}
+            return null;
+        }
         /**
          * Removes all entries from table.
          * @param tableName name of the table

@@ -5,6 +5,8 @@
  */
 package databaseapplication;
 
+import Frameworks.ConnectionManager;
+import java.util.LinkedList;
 import javax.swing.UIManager;
 
 /**
@@ -22,7 +24,15 @@ public class Main {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         }
         catch(Exception ex){}
-        SuperManager.startApp();
+        //SuperManager.startApp();
+        ConnectionManager m = new ConnectionManager("jdbc:derby://localhost:1527/AppDB","ibrahim","ibrahim");
+        m.openConnection();
+        
+        LinkedList<String> tableNames = m.getTables();
+        System.out.println(tableNames+"");
+        for(int i = 0 ; i < tableNames.size() ; i++){
+            System.out.println(tableNames.get(i));
+        }
     }
     
 }
