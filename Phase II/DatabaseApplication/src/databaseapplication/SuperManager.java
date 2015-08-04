@@ -7,6 +7,10 @@ package databaseapplication;
 
 import Frameworks.ConnectionManager;
 import Frameworks.OperationResult;
+import databaseapplication.admin.AdminMainWindow;
+import databaseapplication.instructor.InstructorMainWindow;
+import databaseapplication.student.StudentMainWindow;
+import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 
 /**
@@ -23,17 +27,31 @@ public class SuperManager {
     private static void showLoginDialog(){
         LoginDialog d = new LoginDialog();
     }
+    
     public static void showMainWindow(){
         if(userType.compareToIgnoreCase("Admin") == 0){
-            
+            new AdminMainWindow();
         }
         else if(userType.compareToIgnoreCase("student") == 0){
-            
+            new StudentMainWindow();
         }
         else if(userType.compareToIgnoreCase("instructor") == 0){
-            
+            new InstructorMainWindow();
         }
     }
+    
+    public static OperationResult executeQuery(String val){
+        return connection.executeQuery(val);
+    }
+    
+    public static ResultSet getResultSet(){
+        return connection.getResultSet();
+    }
+    
+    public static OperationResult insert(String tableName, String values){
+        return connection.insert(tableName, values);
+    }
+    
     public static void startApp(){
         connection = new ConnectionManager("jdbc:derby://localhost:1527/AppDB","ibrahim","ibrahim");
         OperationResult r = connection.openConnection();
@@ -46,6 +64,7 @@ public class SuperManager {
             System.exit(-1);
         }
     }
+    
     public static OperationResult login( String loginType, String username, String password){
         if(loginType != null){
             if(loginType.compareToIgnoreCase("admin") == 0){
