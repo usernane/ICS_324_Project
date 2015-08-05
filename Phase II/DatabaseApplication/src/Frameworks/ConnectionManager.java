@@ -1,9 +1,12 @@
 package Frameworks;
 
+import Frameworks.table.TableData;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.LinkedList;
 
@@ -148,6 +151,28 @@ public final class ConnectionManager {
          */
         public ResultSet getResultSet(){
             return this.resultSet;
+        }
+        public TableData getResultSetAsTable(String query){
+            if(this.connection == null){
+                return null;
+            }
+            
+            try{
+                Statement s = this.connection.createStatement();
+                this.resultSet = s.executeQuery(query);
+                
+                ResultSetMetaData meta = this.resultSet.getMetaData();
+                
+                String [] columnsNames = new String[meta.getColumnCount()];
+                for(int i = 1 ; i <= meta.getColumnCount() ; i++){
+                    columnsNames[i-1] = meta.getColumnLabel(i);
+                }
+                TableData returnVal = new TableData(columnsNames,0);
+                return returnVal;
+            }
+            catch(SQLException ex){System.out.println(ex);}
+            
+            return null;
         }
         /**
          * Open the connection using the given url, username and password.

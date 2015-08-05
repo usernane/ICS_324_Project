@@ -6,7 +6,14 @@
 package databaseapplication;
 
 import Frameworks.ConnectionManager;
+import Frameworks.UI.DataTable;
+import Frameworks.UI.DataTableModel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.LinkedList;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
 import javax.swing.UIManager;
 
 /**
@@ -24,9 +31,8 @@ public class Main {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         }
         catch(Exception ex){}
-        SuperManager.startApp();
-        ConnectionManager m = new ConnectionManager("jdbc:derby://localhost:1527/ProjectDB","ibrahim","ibrahim");
-
+        //SuperManager.startApp();
+        
     }
     
 }
