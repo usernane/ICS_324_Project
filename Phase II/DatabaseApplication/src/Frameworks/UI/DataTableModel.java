@@ -40,6 +40,10 @@ public class DataTableModel extends AbstractTableModel{
     public int getColumnCount() {
         return this.data.columns();
     }
+    @Override
+    public boolean isCellEditable(int rowIndex, int columnIndex){
+        return true;
+    }
     public void addRow(){
         this.data.addRow();
         super.fireTableDataChanged();
@@ -72,6 +76,10 @@ public class DataTableModel extends AbstractTableModel{
             this.data = data;
             super.fireTableDataChanged();
         }
+    }
+
+    public TableData getTableData() {
+        return this.data;
     }
 
 }

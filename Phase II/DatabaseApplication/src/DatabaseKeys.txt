@@ -1,0 +1,7 @@
+primary_keys
+
+student :: id
+
+foreign_keys
+
+department :: college_id ref college :: id
