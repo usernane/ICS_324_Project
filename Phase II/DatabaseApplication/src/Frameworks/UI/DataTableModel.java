@@ -42,7 +42,8 @@ public class DataTableModel extends AbstractTableModel{
     }
     @Override
     public boolean isCellEditable(int rowIndex, int columnIndex){
-        return true;
+        System.out.println(this.data.isEditable(rowIndex, columnIndex));
+        return this.data.isEditable(rowIndex, columnIndex);
     }
     public void addRow(){
         this.data.addRow();

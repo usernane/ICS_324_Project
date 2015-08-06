@@ -59,12 +59,14 @@ public class IbrahimAliTestingFile {
                 data.set(true, 0);
                 data.set("Nice", 1);
                 data.set("Work", 2);
-                data.set(new java.sql.Date(2015,12,12), 3);
+                
                 data.set(":P", 4);
                 d.addRow(data);
                 System.out.println(""+d.getValueAt(0,0));
             }
         });
+        d.addRow();
+        d.addRow();
         d.setValueAt("TEST", 0, 3);
     }
     public static void howToUseTable(){

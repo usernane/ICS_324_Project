@@ -33,6 +33,9 @@ public class DataTable extends JScrollPane{
        this.table = new JTable(this.tableModel);
       
     }
+    public JTable getJTable(){
+        return this.table;
+    }
     /**
      * Returns the number of rows in the table.
      * @return number of rows.

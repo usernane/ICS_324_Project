@@ -12,15 +12,19 @@ import java.util.LinkedList;
  * @author Ibrahim
  */
 public class TableData implements Table{
+    
     private LinkedList<String> headers;
     LinkedList<RowData> data;
     private int numOfCOLUMNS;
+    private boolean mode = true;
     /**
      * Creates new instance of <code>TableData</code>.
      * @param headers headers of the table.
      * @param rows initial number of rows.
+     * @param mode
      */
-    public TableData(String [] headers, int rows){
+    public TableData(String [] headers, int rows, boolean mode){
+        this.mode = mode;
         this.headers = new LinkedList<>();
         this.data = new LinkedList<>();
         if(headers != null){
@@ -40,8 +44,11 @@ public class TableData implements Table{
         }
         //adding rows
         for(int i = 0 ; i < rows; i++){
-            this.data.add(new RowData(this.numOfCOLUMNS));
+            this.data.add(new RowData(this.numOfCOLUMNS,this.mode));
         }
+    }
+    public TableData(String [] headers, int initialRowsCount){
+        this(headers,initialRowsCount,true);
     }
     /**
      * Removes a specific row.
@@ -61,8 +68,9 @@ public class TableData implements Table{
      * Update the column name.
      * @param name the new column name.
      * @param columnIndex the index of the column.
+     * @return <code>true</code> if the value is updated.
      */
-    public void setColumnName(String name, int columnIndex){
+    public boolean setColumnName(String name, int columnIndex){
         if(columnIndex >= 0 && columnIndex < this.numOfCOLUMNS){
             LinkedList<String> tmp = this.headers;
             this.headers = new LinkedList<>();
@@ -74,7 +82,9 @@ public class TableData implements Table{
                     this.headers.add(tmp.get(i));
                 }
             }
+            return true;
         }
+        throw new NoSuchColumnException(columnIndex);
     }
     /**
      * Adds new column to the table.
@@ -88,6 +98,30 @@ public class TableData implements Table{
                 data1.addColumn();
             }
         }
+    }
+    public void setEditable(boolean value, int rowIndex, int columnIndex){
+        if(rowIndex < this.data.size() && rowIndex > -1){
+            if(columnIndex < this.numOfCOLUMNS && columnIndex > -1){
+                this.data.get(rowIndex).setEditable(value,columnIndex);
+            }
+            throw new NoSuchColumnException(columnIndex);
+        }
+        throw new NoSuchRowException(rowIndex);
+    }
+    /**
+     * Checks if a cell value can be updated or not.
+     * @param rowIndex row index.
+     * @param columnIndex column index.
+     * @return <code>true</code> if the cell value can be updated.
+     */
+    public boolean isEditable(int rowIndex, int columnIndex){
+        if(rowIndex < this.data.size() && rowIndex > -1){
+            if(columnIndex < this.numOfCOLUMNS && columnIndex > -1){
+                return this.data.get(rowIndex).isEditable(columnIndex);
+            }
+            throw new NoSuchColumnException(columnIndex);
+        }
+        throw new NoSuchRowException(rowIndex);
     }
     /**
      * Removes a specific column from the table.
@@ -106,6 +140,7 @@ public class TableData implements Table{
     }
     /**
      * Set a specific cell of the table to a specific value.
+     * If the cell is allowed to update the value then, it will be updated.
      * @param data the data that will be stored.
      * @param rowIndex the index of the row.
      * @param columnIndex the index of the column.
@@ -113,13 +148,13 @@ public class TableData implements Table{
      */
     @Override
     public boolean set(Object data, int rowIndex, int columnIndex){
-        try{
-            this.data.get(rowIndex).set(data, columnIndex);
-            return true;
+        if(rowIndex < this.data.size() && rowIndex > -1){
+            if(columnIndex < this.numOfCOLUMNS && columnIndex > -1){
+                return this.data.get(rowIndex).set(data, columnIndex);
+            }
+            throw new NoSuchColumnException(columnIndex);
         }
-        catch(IndexOutOfBoundsException e){
-            return false;
-        }
+        throw new NoSuchRowException(rowIndex);
     }
     /**
      * Adds new row to the data.
@@ -131,7 +166,7 @@ public class TableData implements Table{
     public boolean addRow(RowData data){
         if(data != null){
             if(data.size() == this.numOfCOLUMNS){
-               return this.data.add(new RowData(data.getData())); 
+               return this.data.add(new RowData(data.getData(),this.mode)); 
             }
         }
         return false;
@@ -156,7 +191,7 @@ public class TableData implements Table{
      * Adds new row with <code>null</code> values.
      */
     public void addRow(){
-        this.data.add(new RowData(this.numOfCOLUMNS));
+        this.data.add(new RowData(this.numOfCOLUMNS,this.mode));
     }
     @Override
     public String toString(){
@@ -171,7 +206,7 @@ public class TableData implements Table{
         return retStr;
     }
 
-
+    
 
     @Override
     public Object get(int rowIndex, int columnIndex) {
@@ -181,5 +216,9 @@ public class TableData implements Table{
     @Override
     public String getColumnName(int index) {
         return this.headers.get(index);
+    }
+    
+    public void updateInitialMode(boolean b){
+        this.mode = b;
     }
 }
