@@ -22,21 +22,34 @@ public final class ConnectionManager {
 	private String url;
 	private String username;
         private ResultSet resultSet;
-
+        private TableData primaryKeys, foreignKeys;
+        
+        public ConnectionManager(String url,String userName,String password){
+            this(url,userName,password,null);
+        }
 	/**
 	 * 
 	 * @param password
 	 * @param userName
 	 * @param url
+         * @param keysFileDir
 	 */
-	public ConnectionManager(String url,String password, String userName){
+	public ConnectionManager(String url,String userName,String password, String keysFileDir){
             if(password == null || userName == null || url == null){
                 throw new NullPointerException("user name or password or the url is 'null'");
             }
             this.password = password;
             this.url = url;
             this.username = userName;
+            loadKeys(keysFileDir);
 	}
+        private void loadKeys(String dir){
+            if(dir != null){
+                DatabaseKeysExtractor ex = new DatabaseKeysExtractor(dir);
+                this.primaryKeys = ex.getPrimaryKeys();
+                this.foreignKeys = ex.getForeignKeys();
+            }
+        }
         public LinkedList<String> getTables(){
             LinkedList<String> tablesNames = new LinkedList<>();
             try{
@@ -63,6 +76,7 @@ public final class ConnectionManager {
             try{
                 Statement s = this.connection.createStatement();
                 s.executeUpdate("delete * from "+tableName);
+                
                 return new OperationResult(true, message);
             }
             catch(Exception ex){
@@ -168,6 +182,12 @@ public final class ConnectionManager {
                     columnsNames[i-1] = meta.getColumnLabel(i);
                 }
                 TableData returnVal = new TableData(columnsNames,0);
+                while(this.resultSet.next()){
+                    returnVal.addRow();
+                    for(int i = 0 ; i < returnVal.columns() ; i++){
+                        returnVal.set(this.resultSet.getString(i+1), returnVal.rows() - 1, i);
+                    }
+                }
                 return returnVal;
             }
             catch(SQLException ex){System.out.println(ex);}
@@ -188,5 +208,13 @@ public final class ConnectionManager {
                 return new OperationResult(false,ex.getMessage());
             }
 	}
+
+    public TableData getPrimaryKeys() {
+        return this.primaryKeys;
+    }
+
+    public TableData getForeignKeys() {
+        return this.foreignKeys;
+    }
 
 }

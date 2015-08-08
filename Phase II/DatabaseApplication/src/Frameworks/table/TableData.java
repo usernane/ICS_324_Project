@@ -156,6 +156,18 @@ public class TableData implements Table{
         }
         throw new NoSuchRowException(rowIndex);
     }
+    public int getColumnIndex(String columnName){
+        if(columnName != null){
+            int index = 0;
+            for(int i = 0 ; i < this.numOfCOLUMNS ; i++){
+                if(columnName.compareToIgnoreCase(this.headers.get(i)) == 0){
+                    return index;
+                }
+                index++;
+            }
+        }
+        return -1;
+    }
     /**
      * Adds new row to the data.
      * The number of element must be equal to the number of columns in order for the row to be added.
@@ -166,7 +178,7 @@ public class TableData implements Table{
     public boolean addRow(RowData data){
         if(data != null){
             if(data.size() == this.numOfCOLUMNS){
-               return this.data.add(new RowData(data.getData(),this.mode)); 
+               return this.data.add(new RowData(data)); 
             }
         }
         return false;

@@ -1,35 +1,13 @@
-Wed Aug 05 17:44:01 AST 2015 : Apache Derby Network Server - 10.8.2.2 - (1181258) started and ready to accept connections on port 1527
+Sat Aug 08 00:05:32 AST 2015 : Apache Derby Network Server - 10.8.2.2 - (1181258) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Wed Aug 05 17:44:01 AST 2015:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-014e-fe51-a6a6-000002c33935 
-on database directory C:\Users\Ibrahim\Documents\GitHub\ICS_324_Project\DB\ProjectDB  with class loader sun.misc.Launcher$AppClassLoader@752a2259 
+Sat Aug 08 00:05:32 AST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-014f-09fb-a854-000002c33935 
+on database directory C:\Users\Ibrahim\Documents\GitHub\ICS_324_Project\DB\ProjectDB  with class loader sun.misc.Launcher$AppClassLoader@21353d27 
 Loaded from file:/C:/Program%20Files/Java/jdk1.7.0_25/db/lib/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.7.0_25-b17
 user.dir=C:\Program Files\Java\jdk1.7.0_25\db
 derby.system.home=C:\Users\Ibrahim\Documents\GitHub\ICS_324_Project\DB
 Database Class Loader started - derby.database.classpath=''
-Wed Aug 05 18:04:28 AST 2015 Thread[DRDAConnThread_4,5,main] (DATABASE = ProjectDB), (DRDAID = ????????.??-794883895443831040{3}), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 2414; Error Code Value = e. Plaintext connection attempt from an SSL enabled client?
-Wed Aug 05 18:04:28 AST 2015 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 2414; Error Code Value = e. Plaintext connection attempt from an SSL enabled client?
-org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 2414; Error Code Value = e. Plaintext connection attempt from an SSL enabled client?
-	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
-	at org.apache.derby.impl.drda.DRDAConnThread.missingCodePoint(Unknown Source)
-	at org.apache.derby.impl.drda.DRDAConnThread.parsePRPSQLSTTobjects(Unknown Source)
-	at org.apache.derby.impl.drda.DRDAConnThread.parsePRPSQLSTT(Unknown Source)
-	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
-	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
-Wed Aug 05 18:04:28 AST 2015 Thread[DRDAConnThread_4,5,main] (DATABASE = ProjectDB), (DRDAID = ????????.??-794883895443831040{3}), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 2414; Error Code Value = e. Plaintext connection attempt from an SSL enabled client?
-Wed Aug 05 18:04:28 AST 2015 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 2414; Error Code Value = e. Plaintext connection attempt from an SSL enabled client?
-org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 2414; Error Code Value = e. Plaintext connection attempt from an SSL enabled client?
-	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
-	at org.apache.derby.impl.drda.DRDAConnThread.missingCodePoint(Unknown Source)
-	at org.apache.derby.impl.drda.DRDAConnThread.parsePRPSQLSTTobjects(Unknown Source)
-	at org.apache.derby.impl.drda.DRDAConnThread.parsePRPSQLSTT(Unknown Source)
-	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
-	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
 ----------------------------------------------------------------
-Wed Aug 05 19:10:08 AST 2015: Shutting down Derby engine
-----------------------------------------------------------------
-Wed Aug 05 19:10:08 AST 2015:
-Shutting down instance a816c00e-014e-fe51-a6a6-000002c33935 on database directory C:\Users\Ibrahim\Documents\GitHub\ICS_324_Project\DB\ProjectDB with class loader sun.misc.Launcher$AppClassLoader@752a2259 
-----------------------------------------------------------------
+Sat Aug 08 03:31:01 AST 2015: Shutting down Derby engine

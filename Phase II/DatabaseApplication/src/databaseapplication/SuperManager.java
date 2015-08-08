@@ -8,8 +8,7 @@ package databaseapplication;
 import Frameworks.ConnectionManager;
 import Frameworks.OperationResult;
 import databaseapplication.admin.AdminMainWindow;
-import databaseapplication.instructor.InstructorMainWindow;
-import databaseapplication.student.StudentMainWindow;
+
 import java.sql.ResultSet;
 import java.util.LinkedList;
 import javax.swing.JOptionPane;
@@ -36,10 +35,10 @@ public class SuperManager {
             new AdminMainWindow();
         }
         else if(userType.compareToIgnoreCase("student") == 0){
-            new StudentMainWindow();
+           // new StudentMainWindow();
         }
         else if(userType.compareToIgnoreCase("instructor") == 0){
-            new InstructorMainWindow();
+           // new InstructorMainWindow();
         }
     }
     

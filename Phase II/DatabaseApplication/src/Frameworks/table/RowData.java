@@ -40,7 +40,6 @@ public class RowData {
         this.mode = initialMode;
         if(data != null){
             this.rowData = new Object[data.length];
-            this.isEditable = new boolean[data.length];
             for(int i = 0 ; i < this.rowData.length ; i++){
                 this.rowData[i] = data[i];
             }
@@ -54,18 +53,37 @@ public class RowData {
     initialize the editable array
     */
     private void initEditableArray(){
-        if(this.isEditable == null){
-            this.isEditable = new boolean[this.rowData.length];
-            for(int i = 0 ; i < this.isEditable.length ; i++){
-                this.isEditable[i] = this.mode;
-            }
+        this.isEditable = new boolean[this.rowData.length];
+        for(int i = 0 ; i < this.isEditable.length ; i++){
+            this.isEditable[i] = this.mode;
         }
+        
+    }
+    public RowData(RowData data){
+        if(data != null){
+            this.isEditable = new boolean[data.size()];
+            this.rowData = new Object[data.size()];
+            for(int i = 0 ; i < data.size() ; i++){
+                this.isEditable[i] = data.isEditable(i);
+                this.rowData[i] = data.get(i);
+            }
+            return;
+        }
+        throw new IllegalArgumentException("RowData can not be 'null'");
     }
     /**
      * Creates new instance of <code>RowData</code>.
      */
     public RowData(){
         this(-1);
+    }
+    public boolean contains(Object value){
+        for(int i = 0 ; i < this.size() ; i++){
+            if(value == this.rowData[i]){
+                return true;
+            }
+        }
+        return false;
     }
     public void addColumn(){
         this.addColumn(null);
@@ -105,7 +123,7 @@ public class RowData {
                 this.rowData[column] = data;
                 return true;
             }
-            return true;
+            return false;
         }
         throw new NoSuchColumnException(column);
     }
@@ -188,5 +206,4 @@ public class RowData {
     public Object[] getData() {
         return this.rowData;
     }
-
 }

@@ -1,7 +1,15 @@
-primary_keys
+<primary_keys>
 
-student :: id
+college :: id c
+student :: id c
+instructor :: id c
+major :: code
+</primary_keys>
 
-foreign_keys
+<foreign_keys>
 
-department :: college_id ref college :: id
+department :: college_id ref  college :: id c
+major :: department_id ref department :: id c
+student :: major_code ref major :: code
+
+</foreign_keys>
