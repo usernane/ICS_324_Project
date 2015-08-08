@@ -28,10 +28,11 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         try{
+            
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         }
         catch(Exception ex){}
-        //SuperManager.startApp();
+        SuperManager.startApp();
         
     }
     

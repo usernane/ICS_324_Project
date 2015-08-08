@@ -99,7 +99,7 @@ public final class ConnectionManager {
 	}
 
 	/**
-	 * deletes a specific row from a table.
+	 * deletes a specific rows from a table.
 	 * @param value the row that has the given value.
          * @param column the column that has the value.
 	 * @param tableName the name of the table.
@@ -117,7 +117,17 @@ public final class ConnectionManager {
             }
             
 	}
-
+        public OperationResult executeUpdate(String table, String values, String condition){
+            String message = "done";
+                try{
+                    Statement s = this.connection.createStatement();
+                     s.executeUpdate("update "+table+" set "+values+" where "+condition);
+                    return new OperationResult(true,message);
+                }
+                catch(Exception ex){
+                    return new OperationResult(false, ex.getMessage());
+                }
+        }
 	/**
 	 * Executes a specific query.
 	 * @param query the query that will be executed
