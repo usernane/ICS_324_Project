@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="37A8501D-37D4-4B1F-0902-58FEEA5E1DD4" name="Course">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>ACE4FEA7-EB1B-F50F-86B4-D05C4B9832E0</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="number" id="6AF40C94-2E3F-C088-CD43-45EA1780EF0C">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>8B1CF374-80B9-6B86-0A3E-67E50712B36A</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,0,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="2AA33E6F-9AE5-567E-4FD9-08EECABCE293">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>3E165105-25B7-D8A5-D52B-4F8BA8CD5CFD</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="level" id="B18B6032-3841-BCA7-5883-8838722D92BE">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>2D5BAF96-B1B1-6EB3-9A61-93461C8D8352</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,0,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Major_code" id="F9D32855-32D0-DC23-12EB-669329123B2C">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>1ED127C9-56F0-D51E-7A32-85890604441B</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24E326CE-48D1-B12F-5E4F-F8E0064A2F11" referredColumn="C2D93A0D-3378-5FA4-F744-C1EC2DEC7E9E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F5B5CBBC-ABAE-8E11-EE02-34BDA98F69D9" name="Course_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>41BF0245-BADE-1995-9C30-74E580222165</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AF40C94-2E3F-C088-CD43-45EA1780EF0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C981778-F5DA-3C21-E04A-E356CDE29BEF" name="Course_Major_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>2149BB28-C030-69C5-D2D8-26DB3D42296C</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9D32855-32D0-DC23-12EB-669329123B2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

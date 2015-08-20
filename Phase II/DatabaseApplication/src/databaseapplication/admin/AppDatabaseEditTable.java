@@ -65,7 +65,7 @@ public class AppDatabaseEditTable extends DataTable{
         super.updateData(data);
         for(int i = 0 ; i < this.fKeys.rows() ; i++){
             String tableNameF = (String)this.fKeys.get(i, 0);
-            System.out.println("Table Name = "+tableNameF);
+            //System.out.println("Table Name = "+tableNameF);
             if(tableNameF.compareToIgnoreCase(tableName) == 0){
                 
                 String keyColumn = (String)this.fKeys.get(i, 1);
@@ -73,6 +73,7 @@ public class AppDatabaseEditTable extends DataTable{
                 String refCol = (String)this.fKeys.get(i, 3);
                 System.out.println("select "+refCol+" from "+refTable);
                 TableData fkData = this.manager.getResultSetAsTable("select "+refCol+" from "+refTable);
+               // System.out.println(""+fkData);
                 JComboBox<String> fkComboBox = new JComboBox<>();
                 for(int j = 0 ; j < fkData.rows() ; j++){
                     fkComboBox.addItem((String)fkData.get(j, 0));
@@ -82,4 +83,10 @@ public class AppDatabaseEditTable extends DataTable{
             }
         }
     }
+
+    public String getSlectedTableName() {
+        return this.currentTable;
+    }
+
+
 }

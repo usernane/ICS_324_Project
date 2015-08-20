@@ -5,6 +5,7 @@
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,25 +16,13 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="6DD61DDA-99AB-6E60-01C5-2493F001195C">
-<createdBy>Ibrahim</createdBy>
-<createdTime>2015-08-03 19:02:43 UTC</createdTime>
-<ownerDesignName>Model</ownerDesignName>
-<engineerTo>
-<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1 CHAR</dataTypeSize>
-<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="name" id="B355F786-1461-F42B-80E6-4E75628464EB">
 <createdBy>Ibrahim</createdBy>
 <createdTime>2015-08-03 19:03:08 UTC</createdTime>
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -42,14 +31,14 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="abbreviation" id="5CB0A0CE-1485-F04D-9A68-91E3BD40B237">
+<Attribute name="id" id="5CB0A0CE-1485-F04D-9A68-91E3BD40B237">
 <createdBy>Ibrahim</createdBy>
 <createdTime>2015-08-03 19:03:33 UTC</createdTime>
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -64,10 +53,11 @@
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>6DD61DDA-99AB-6E60-01C5-2493F001195C</attributeRef>
+<attributeRef>5CB0A0CE-1485-F04D-9A68-91E3BD40B237</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

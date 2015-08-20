@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87410C15-D7C3-CE54-240B-F0BB45E11EE1" name="Section">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-09 11:04:03 UTC</createdTime>
+<generatorID>EB93DD6B-87F1-7096-731D-01E441DAAA99</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="refrence_number" id="54E7E97C-E2D0-247E-9E57-7DD1F71A7E05">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-09 11:04:03 UTC</createdTime>
+<generatorID>24CC20F0-4F6B-CFE4-C34B-565776531F86</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="number" id="57F68865-912F-90C7-02F5-738E0CDD829D">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-09 11:04:03 UTC</createdTime>
+<generatorID>961F11A7-6EB0-2F2F-196A-58B386BA5670</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Instructor_id" id="751264C6-3362-8629-B719-A610969DF63D">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-09 11:04:03 UTC</createdTime>
+<generatorID>CC5D801B-426D-C8F6-D203-772CDD4E5389</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>9</dataTypeScale>
+<ownDataTypeParameters>,0,9</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E8496C9-6ED5-1AFD-D404-5AC757471FC3" referredColumn="249CDFBD-261B-1882-C61B-F07126C21107"/>
+</associations>
+</Column>
+<Column name="Course_number" id="19198EA1-BE2B-1D00-5009-9BC609C7EE83">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-09 11:04:03 UTC</createdTime>
+<generatorID>45B1CE25-5C6D-1152-C0E5-AD082B051795</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,0,4</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E2F85F0-7983-3F8E-CC6A-FB94FA2958ED" referredColumn="A57DE742-2A83-768D-8E34-3996D64DF627"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83730868-25A4-4C33-D108-CB1C0F6AE5C4" name="Section_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-09 11:04:03 UTC</createdTime>
+<generatorID>53D30854-F2C5-26F8-5F0A-A8797D72E986</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54E7E97C-E2D0-247E-9E57-7DD1F71A7E05"/>
+<colUsage columnID="19198EA1-BE2B-1D00-5009-9BC609C7EE83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31A96CF1-7BA2-6D18-D81B-63D1CCA3C451" name="Section_Course_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-09 11:04:03 UTC</createdTime>
+<generatorID>AE36EC0C-FB39-34E2-6A6A-F9A8AE96A6F3</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19198EA1-BE2B-1D00-5009-9BC609C7EE83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F74D576C-0964-7A37-BAEF-4B0975286D21" name="Section_Instructor_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-09 11:04:03 UTC</createdTime>
+<generatorID>2FC4E05A-626A-41B9-57A6-75E32804CF85</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="751264C6-3362-8629-B719-A610969DF63D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

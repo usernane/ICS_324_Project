@@ -17,23 +17,29 @@ import javax.swing.JPanel;
 public class ActionsPanel extends JPanel{
     private JButton addRecordButton;
     private JButton removeButton;
+    private JButton editButton;
     public ActionsPanel(){
         init();
         buildUI();
     }
     private void init(){
-        this.removeButton = new JButton("Remove");
-        this.addRecordButton = new JButton("Add");
+        this.removeButton = new JButton("Remove Selecte Record");
+        this.addRecordButton = new JButton("Add New Record");
+        this.editButton = new JButton("Edit Selected Record");
     }
     private void buildUI(){
-        super.setLayout(new GridLayout(2,1));
+        super.setLayout(new GridLayout(3,1));
         super.add(this.addRecordButton);
         super.add(this.removeButton);
+        super.add(this.editButton);
     }
     public void setAddRecordAction(ActionListener l){
-        
+        this.addRecordButton.addActionListener(l);
     }
     public void setRemoveRecordAction(ActionListener l){
-        
+        this.removeButton.addActionListener(l);
+    }
+    public void addEditRecordAction(ActionListener l){
+        this.editButton.addActionListener(l);
     }
 }

@@ -1,0 +1,10 @@
+ 1- some difficulties In using some tools that should search to know their main functionalities which wastes time that should not be wasted
+2- Some exceptions take a lot of work to know their handle them
+ 3- unclear field formats in SQL such as Date that’s create problems in the interface
+
+
+
+I worked in :
+Relational schema
+Student interface
+

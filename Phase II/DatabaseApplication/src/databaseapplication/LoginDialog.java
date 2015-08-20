@@ -121,7 +121,7 @@ public class LoginDialog extends JDialog{
                        if(result.getResult()){
                            JOptionPane.showMessageDialog(this.Parent, result.getMessage(), "Loged in!", JOptionPane.INFORMATION_MESSAGE);
                            this.Parent.setVisible(false);
-                           SuperManager.showMainWindow();
+                           SuperManager.showMainWindow(passwordTextField.getText());
                            this.Parent.dispose();
                        }
                        else{

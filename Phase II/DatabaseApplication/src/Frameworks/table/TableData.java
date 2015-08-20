@@ -50,6 +50,12 @@ public class TableData implements Table{
     public TableData(String [] headers, int initialRowsCount){
         this(headers,initialRowsCount,true);
     }
+    public RowData getRow(int rowIndex){
+        if(rowIndex > -1 && rowIndex < this.rows()){
+            return this.data.get(rowIndex);
+        }
+        throw new IndexOutOfBoundsException("("+rowIndex+")");
+    }
     /**
      * Removes a specific row.
      * @param index index of the row.
@@ -232,5 +238,13 @@ public class TableData implements Table{
     
     public void updateInitialMode(boolean b){
         this.mode = b;
+    }
+
+    public String[] getColumnsNames() {
+        String [] headers = new String[this.headers.size()];
+        for(int i = 0 ; i < this.headers.size() ; i++){
+            headers[i] = this.headers.get(i);
+        }
+        return headers;
     }
 }

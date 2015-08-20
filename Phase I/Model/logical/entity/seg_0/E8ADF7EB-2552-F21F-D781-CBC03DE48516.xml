@@ -5,6 +5,7 @@
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,6 +22,7 @@
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -35,6 +37,7 @@
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -42,20 +45,21 @@
 <dataTypeSize>4 CHAR</dataTypeSize>
 <ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id" id="93383600-6E07-DC99-0436-7E44FF15621C">
+<Attribute name="id" id="CB4477CE-C0B0-7E25-DAE9-7FC8E3FE7FF9">
 <createdBy>Ibrahim</createdBy>
-<createdTime>2015-08-03 20:14:45 UTC</createdTime>
+<createdTime>2015-08-10 02:07:42 UTC</createdTime>
 <generatorID>7640E168-2ED4-9D91-CFFA-66726CA36B11</generatorID>
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
-<referedAttribute>3918411A-E604-F886-B9AF-67B8582642F4</referedAttribute>
+<referedAttribute>765B493D-7001-E57F-8874-B94B703CC043</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1 CHAR</dataTypeSize>
-<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -65,6 +69,7 @@
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

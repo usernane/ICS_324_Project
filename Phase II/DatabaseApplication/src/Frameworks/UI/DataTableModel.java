@@ -28,6 +28,9 @@ public class DataTableModel extends AbstractTableModel{
             this.data = new TableData(null,0);
         }
     }
+    public RowData getRow(int rowIndex){
+        return this.data.getRow(rowIndex);
+    }
     @Override
     public int getRowCount() {
         return this.data.rows();
@@ -81,6 +84,10 @@ public class DataTableModel extends AbstractTableModel{
 
     public TableData getTableData() {
         return this.data;
+    }
+
+    public String[] getColumnsNames() {
+        return this.data.getColumnsNames();
     }
 
 }

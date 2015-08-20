@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A27BA170-A480-F31A-9B24-181AB96ADC21" name="Enrollment">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>A9D3F13A-A3D0-9169-4CE3-FFB434E370D5</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="reg_date" id="4B71E1CC-4F34-B7FC-D0AD-4A8427EF4676">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>30A4AE17-BC35-9AFB-0EBD-E51906587949</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Student_id" id="37CC8AD4-46CA-941D-9208-9B8C9BABD18B">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>DE320B47-92C8-D19B-5BA7-89AFBF27FC67</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>9</dataTypeScale>
+<ownDataTypeParameters>,0,9</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B994439E-CA7E-9864-15A1-6AE305BA1598" referredColumn="6DCCCDE4-7C33-E1C4-4D25-6013437A7517"/>
+</associations>
+</Column>
+<Column name="Section_refrence_number" id="2EF7CB7D-9E1D-90C3-586B-68D0B80EEFAA">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>ABE75B05-F90A-6C00-A0C3-555715D5C17D</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70F65D26-21C5-1FCB-DC36-D8D6C25BBB65" referredColumn="261D4C5B-10D7-486C-5A10-5353D31BF850"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1BEC2372-1BD1-FC74-3206-E34FDB327266" name="Enrollment_PK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>5A60C8AA-E360-D333-DE93-D8CF148150BA</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37CC8AD4-46CA-941D-9208-9B8C9BABD18B"/>
+<colUsage columnID="2EF7CB7D-9E1D-90C3-586B-68D0B80EEFAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04E847A6-1EF4-C683-A209-F631CFB61223" name="Enrollment_Student_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>7469407B-3016-1B9B-B113-56A2CFD50E3E</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37CC8AD4-46CA-941D-9208-9B8C9BABD18B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AB51C84-865C-CB59-4B1C-52E68D7EC71D" name="Enrollment_Section_FK">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:13:37 UTC</createdTime>
+<generatorID>26FFC99B-404A-4A55-D70F-8131B4541E02</generatorID>
+<ownerDesignName>Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EF7CB7D-9E1D-90C3-586B-68D0B80EEFAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

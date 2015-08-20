@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Has_dep" directorySegmentName="seg_0" id="24FFD3A8-6D1D-31DD-9672-06BE770111E1">
+<createdBy>Ibrahim</createdBy>
+<createdTime>2015-08-10 02:08:13 UTC</createdTime>
+<ownerDesignName>Model</ownerDesignName>
+<engineerTo>
+<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
+</engineerTo>
+<sourcePk>AF29A398-CCF8-FFCA-739B-38D5D647E3B0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>81ACDD4E-7955-B3CA-1175-BF4928A55FCD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BCCBF552-3266-5217-34E4-001781E37F0C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

@@ -112,8 +112,8 @@ public class IbrahimAliTestingFile {
         //d.setValueAt("TEST", 0, 3);
     }
     public static void testEditTable(){
-        ConnectionManager mngr = new ConnectionManager("jdbc:derby://localhost:1527/ProjectDB","ibrahim","ibrahim","C:\\Users\\Ibrahim\\Documents\\GitHub\\ICS_324_Project\\Phase II\\DatabaseApplication\\src\\DatabaseKeys.txt");
-        mngr.openConnection();
+        ConnectionManager mngr = new ConnectionManager("jdbc:derby://localhost:1527/ProjectDB","ibrahim","ibrahim","C:\\Users\\Ibrahim\\Documents\\GitHub\\project\\Phase II\\DatabaseApplication\\src\\DatabaseKeys.txt");
+        
         AppDatabaseEditTable table = new AppDatabaseEditTable(mngr);
  
         JFrame tmp = new JFrame("Hi");

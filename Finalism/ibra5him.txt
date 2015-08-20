@@ -1,0 +1,32 @@
+worked_on:
+in real life:
+created a group in the whatsapp
+created a repository in github
+
+in report:
+revised the assumptions
+brainstorm the application requirements
+revised the conceptual schema
+
+in Java:
+CommonMethods from package databaseapplication
+Instructor package(databaseapplication.instructor) containing
+	InstructorAssignCutoffsDialog
+	InstructorAssignGradingComponentDialog
+	InstructorAssignPointsDialog
+	InstructorDeleteGradingComponenetDialog
+	InstructorDeleteGradingCutoffDialog
+	InstructorViewActivityPointsDialog
+	InstructorViewGradingComponentsDialog
+	InstructorViewGradingCutoffsDialog
+	InstructorViewPointsDialog
+	InstructorViewSectionStatisticsDialog
+	InstructorViewStudentsDialog
+	Main
+
+
+hinderers:
+integrating and merge with several IDEs
+a huge amount time been consumed
+sycing and keeping up to date with everyone
+we went to a bigger and wider generic scope

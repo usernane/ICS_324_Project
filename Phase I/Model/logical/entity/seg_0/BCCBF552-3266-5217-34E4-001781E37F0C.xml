@@ -5,6 +5,7 @@
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -16,25 +17,13 @@
 <normalForm>Third</normalForm>
 <shortName>Dep</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="3918411A-E604-F886-B9AF-67B8582642F4">
-<createdBy>Ibrahim</createdBy>
-<createdTime>2015-08-03 18:57:01 UTC</createdTime>
-<ownerDesignName>Model</ownerDesignName>
-<engineerTo>
-<item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1 CHAR</dataTypeSize>
-<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="name" id="91C54EE0-28A4-B72C-5820-4639873690EA">
 <createdBy>Ibrahim</createdBy>
 <createdTime>2015-08-03 18:57:25 UTC</createdTime>
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,34 +32,35 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="abbreviation" id="765B493D-7001-E57F-8874-B94B703CC043">
+<Attribute name="id" id="765B493D-7001-E57F-8874-B94B703CC043">
 <createdBy>Ibrahim</createdBy>
 <createdTime>2015-08-03 18:57:51 UTC</createdTime>
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>5 CHAR</dataTypeSize>
 <ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="83908222-547C-E416-DB42-942FC3138F04">
+<Attribute name="id1" id="05B04A14-52BE-5905-0FEF-BDE69820534B">
 <createdBy>Ibrahim</createdBy>
-<createdTime>2015-08-03 20:14:17 UTC</createdTime>
-<generatorID>62725CE7-95E9-7DA9-8587-0CE90D4F8562</generatorID>
+<createdTime>2015-08-10 02:08:13 UTC</createdTime>
+<generatorID>24FFD3A8-6D1D-31DD-9672-06BE770111E1</generatorID>
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
-<referedAttribute>6DD61DDA-99AB-6E60-01C5-2493F001195C</referedAttribute>
+<referedAttribute>5CB0A0CE-1485-F04D-9A68-91E3BD40B237</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1 CHAR</dataTypeSize>
-<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -80,10 +70,11 @@
 <ownerDesignName>Model</ownerDesignName>
 <engineerTo>
 <item key="AFC86F26-8F5D-61FE-BCBF-242E384F58C2" value="true"/>
+<item key="4A6B339D-A859-C788-F6B5-F0905E41F3F3" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>3918411A-E604-F886-B9AF-67B8582642F4</attributeRef>
+<attributeRef>765B493D-7001-E57F-8874-B94B703CC043</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
